@@ -1,0 +1,184 @@
+desc[msft-wep1]:
+
+name = Windows Entertainment Pack 1
+icon = msft-wep1.png
+machine = pc
+rootpath = C:\
+osenv= windows 3.11.002
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows setting
+//
+config[winsetting]:
+    title = Windows version
+    option[crop]:   wincrop = true; name = Crop window
+    option[full]: name = Full desktop; priority = 1
+end
+
+//
+//  Cruel
+//
+game[pc-en-cruel]:
+    name = Cruel English version
+    anchorfile = CRUEL.EXE
+    launch = "$(rootpath)\CRUEL.EXE"
+    winres = 640x480x8
+    file[]: crc = d2ac7572; size =      9232; name = ABOUTWEP.DLL
+    file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
+    file[]: crc = 60ae2d0e; size =     17120; name = CRUEL.EXE
+    file[]: crc = 90426830; size =     15988; name = CRUEL.HLP
+
+
+end
+
+//
+//  Golf
+//
+game[pc-en-golf]:
+    name = Golf English version
+    anchorfile = GOLF.EXE
+    launch = "$(rootpath)\GOLF.EXE"
+    winres = 640x480x8
+    file[]: crc = d2ac7572; size =      9232; name = ABOUTWEP.DLL
+    file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
+    file[]: crc = d68b7d91; size =     14256; name = GOLF.EXE
+    file[]: crc = 805089d2; size =     15414; name = GOLF.HLP
+
+
+end
+
+//
+//  Minesweeper
+//
+game[pc-en-mine]:
+    name = Minesweeper English version
+    anchorfile = WINMINE.EXE
+    launch = "$(rootpath)\WINMINE.EXE"
+    winres = 640x480x8
+    file[]: crc = d2ac7572; size =      9232; name = ABOUTWEP.DLL
+    file[]: crc = faf913ee; size =     26976; name = WINMINE.EXE
+    file[]: crc = added2d9; size =     24157; name = WINMINE.HLP
+
+
+
+end
+
+
+
+
+//
+//  Pegged
+//
+game[pc-en-pegged]:
+    name = Pegged English version
+    anchorfile = PEGGED.EXE
+    launch = "$(rootpath)\PEGGED.EXE"
+    winres = 640x480x8
+    file[]: crc = d2ac7572; size =      9232; name = ABOUTWEP.DLL
+    file[]: crc = e8a7714b; size =     27648; name = PEGGED.EXE
+    file[]: crc = ff3852c3; size =     35496; name = PEGGED.HLP
+
+
+end
+
+//
+//  Taipei
+//
+game[pc-en-taipei]:
+    name = Taipei English version
+    anchorfile = TP.EXE
+    launch = "$(rootpath)\TP.EXE"
+    winres = 640x480x8
+    file[]: crc = d2ac7572; size =      9232; name = ABOUTWEP.DLL
+    file[]: crc = 645c9b86; size =    127147; name = TP.EXE
+    file[]: crc = f986b86e; size =     28375; name = TP.HLP
+
+
+end
+
+//
+//  Tetris
+//
+game[pc-en-tetris]:
+    name = Tetris English version
+    anchorfile = TETRIS.EXE
+    launch = "$(rootpath)\TETRIS.EXE"
+    winres = 640x480x8
+    file[]: crc = dc2fd1f3; size =     10224; name = ABOUTTET.DLL
+    file[]: crc = 2fff577e; size =     64784; name = TETRIS.EXE
+    file[]: crc = 186b9e11; size =     25416; name = TETRIS.HLP
+
+
+end
+
+
+//
+//  Tic
+//
+game[pc-en-tic]:
+    name = TicTactics English version
+    anchorfile = TIC.EXE
+    launch = "$(rootpath)\TIC.EXE"
+    winres = 640x480x8
+    file[]: crc = d2ac7572; size =      9232; name = ABOUTWEP.DLL
+    file[]: crc = 5a5be638; size =     16944; name = TIC.EXE
+    file[]: crc = 8fc98a19; size =     14833; name = TIC.HLP
+
+
+end
+
+
+//
+// installer
+//
+installer[pc-en-wep1-install]:
+    name = WEP1 Installer
+    anchorfile = WEPSETUP.INF
+    launch = "$(rootpath)\SETUP.EXE"
+    installid = *
+    file[]: crc = b37d680e; size =      3232; name = SETUP.EXE
+    file[]: crc = 4e97dcb2; size =      1753; name = WEPSETUP.INF
+    file[]: crc = b834149e; size =      5327; name = BIN\ABOUTTET.DL$
+    file[]: crc = 3f6f34db; size =      4610; name = BIN\ABOUTWEP.DL$
+    file[]: crc = 429311cd; size =     48424; name = BIN\CARDS.DL$
+    file[]: crc = 010f0c46; size =     10771; name = BIN\CRUEL.EX$
+    file[]: crc = b23e0d8a; size =     10420; name = BIN\CRUEL.HL$
+    file[]: crc = b18235fa; size =      1466; name = BIN\DROPOUT.I$
+    file[]: crc = 2baba993; size =     14263; name = BIN\EXPAND.EXE
+    file[]: crc = 9d88e40a; size =      2280; name = BIN\FIREWORK.I$
+    file[]: crc = 2cf3c2ec; size =      9133; name = BIN\GOLF.EX$
+    file[]: crc = 61a43ec8; size =      9960; name = BIN\GOLF.HL$
+    file[]: crc = 7ac269a3; size =     17156; name = BIN\IDLEWILD.EX$
+    file[]: crc = 018e2cf0; size =      8724; name = BIN\IDLEWILD.HL$
+    file[]: crc = e25ef60a; size =      5050; name = BIN\IWLIB.DL$
+    file[]: crc = 48b75914; size =      1115; name = BIN\LINES.I$
+    file[]: crc = 7a02fb68; size =      1250; name = BIN\MANUAL.BAT
+    file[]: crc = ffa48562; size =     12385; name = BIN\PEGGED.EX$
+    file[]: crc = 961be6eb; size =     13580; name = BIN\PEGGED.HL$
+    file[]: crc = 68d21d72; size =      1479; name = BIN\SHUFFLE.I$
+    file[]: crc = eb2e109a; size =      1078; name = BIN\STARS.I$
+    file[]: crc = 0d4cbad8; size =     42071; name = BIN\TETRIS.EX$
+    file[]: crc = b6d46820; size =     12105; name = BIN\TETRIS.HL$
+    file[]: crc = 808aa5ee; size =     10194; name = BIN\TIC.EX$
+    file[]: crc = a4349cfe; size =      9651; name = BIN\TIC.HL$
+    file[]: crc = 6e57f3fe; size =     61791; name = BIN\TP.EX$
+    file[]: crc = ff2d37e1; size =     17187; name = BIN\TP.HL$
+    file[]: crc = 18434889; size =     76208; name = BIN\WEPBINXZ.EXE
+    file[]: crc = 26dcdd1f; size =     11697; name = BIN\WEPUTIL.DL$
+    file[]: crc = ed8de302; size =     15544; name = BIN\WINMINE.EX$
+    file[]: crc = 696ca1fd; size =     13344; name = BIN\WINMINE.HL$
+    file[]: crc = e26c6ae3; size =       897; name = BIN\WIPE.I$
+
+
+
+end
+
+
+end

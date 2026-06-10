@@ -1,0 +1,192 @@
+desc[msft-wep2]:
+
+name = Windows Entertainment Pack 2
+icon = msft-wep2.png
+machine = pc
+rootpath = C:\
+osenv= windows 3.11.002
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows setting
+//
+config[winsetting]:
+    title = Windows version
+    option[crop]:   wincrop = true; name = Crop window
+    option[full]: name = Full desktop; priority = 1
+end
+
+//
+//  Freecell
+//
+game[pc-en-freecell]:
+    name = Freecell English version
+    anchorfile = FREECELL.EXE
+    winres = 640x480x8
+    launch = "$(rootpath)\FREECELL.EXE"
+    file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
+    file[]: crc = f94bbb45; size =     28672; name = FREECELL.EXE
+    file[]: crc = 7159768b; size =     17480; name = FREECELL.HLP
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+end
+
+//
+//  Jigsawed
+//
+game[pc-en-jigsawed]:
+    name = Jigsawed English version
+    anchorfile = JIGSAWED.EXE
+    winres = 640x480x8
+    launch = "$(rootpath)\JIGSAWED.EXE"
+    file[]: crc = c5e22a95; size =     80358; name = BRICKS.BMP
+    file[]: crc = 3c2c6557; size =     80358; name = FISH.BMP
+    file[]: crc = ead5faa4; size =     66904; name = JIGSAWED.EXE
+    file[]: crc = 60957968; size =     15817; name = JIGSAWED.HLP
+    file[]: crc = a3870b53; size =     80358; name = RUG.BMP
+    file[]: crc = e445126a; size =     80358; name = TANKER.BMP
+    file[]: crc = 0395748d; size =     80358; name = TREES.BMP
+    file[]: crc = bfb34857; size =    271264; name = VBRUN100.DLL
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+end
+
+//
+//  Rattler
+//
+game[pc-en-rattler]:
+    name = Rattler English version
+    anchorfile = RATTLER.EXE
+    winres = 640x480x8
+    launch = "$(rootpath)\RATTLER.EXE"
+    file[]: crc = ae78a71a; size =     14691; name = FIELD100.DLL
+    file[]: crc = 4c0f1523; size =     70226; name = RATTLER.EXE
+    file[]: crc = 5b3ba401; size =     16251; name = RATTLER.HLP
+    file[]: crc = bfb34857; size =    271264; name = VBRUN100.DLL
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+end
+
+//
+//  Rodent Race
+//
+game[pc-en-rodent]:
+    name = Rodent's Revenge English version
+    anchorfile = RODENT.EXE
+    winres = 640x480x8
+    launch = "$(rootpath)\RODENT.EXE"
+    file[]: crc = ae78a71a; size =     14691; name = FIELD100.DLL
+    file[]: crc = 400979ca; size =     56424; name = RODENT.EXE
+    file[]: crc = 02313e34; size =    158394; name = RODENT.HLP
+    file[]: crc = bfb34857; size =    271264; name = VBRUN100.DLL
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+end
+
+//
+//  Stones
+//
+game[pc-en-stones]:
+    name = Stones English version
+    anchorfile = STONES.EXE
+    winres = 640x480x8
+    launch = "$(rootpath)\STONES.EXE"
+    file[]: crc = 3631f61b; size =     18688; name = STONE00.DLL
+    file[]: crc = be4b0184; size =     18688; name = STONE01.DLL
+    file[]: crc = a4c4b289; size =     18688; name = STONE02.DLL
+    file[]: crc = 64af1331; size =     18688; name = STONE03.DLL
+    file[]: crc = 311163b4; size =     18848; name = STONE04.DLL
+    file[]: crc = 69756b06; size =     15168; name = STONEE00.DLL
+    file[]: crc = fdec88f3; size =     15168; name = STONEE01.DLL
+    file[]: crc = c51c9a07; size =     15168; name = STONEE02.DLL
+    file[]: crc = e01a9df8; size =     15168; name = STONEE03.DLL
+    file[]: crc = 29e310cf; size =     31296; name = STONES.EXE
+    file[]: crc = 9ed704ec; size =     22949; name = STONES.HLP
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+end
+
+//
+//  Tut's Tomb
+//
+game[pc-en-tutstomb]:
+    name = Tut's Tomb English version
+    anchorfile = TUTSTOMB.EXE
+    winres = 640x480x8
+    launch = "$(rootpath)\TUTSTOMB.EXE"
+    file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
+    file[]: crc = cfd66433; size =    101472; name = TUTSTOMB.EXE
+    file[]: crc = 2edb931a; size =     15527; name = TUTSTOMB.HLP
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+
+end
+
+//
+// installer
+//
+installer[pc-en-wep2-install]:
+    name = WEP2 Installer
+    anchorfile = BINXZ.EXE
+    launch = "$(rootpath)\SETUP.EXE"
+    installid = *
+    file[]: crc = 889ef0c5; size =     34288; name = BINXZ.EXE
+    file[]: crc = cbbc5f8a; size =      2871; name = README.TXT
+    file[]: crc = 94e0dc4d; size =      5280; name = SETUP.EXE
+    file[]: crc = 98b11017; size =      3257; name = SETUP.INF
+    file[]: crc = 009e32b5; size =     46946; name = BIN\BRICKS.BM$
+    file[]: crc = a98f590a; size =      1452; name = BIN\BRICKS.I$
+    file[]: crc = 429311cd; size =     48424; name = BIN\CARDS.DL$
+    file[]: crc = 744fd085; size =     11811; name = BIN\FIELD100.DL$
+    file[]: crc = 36ef0c0e; size =     26056; name = BIN\FISH.BM$
+    file[]: crc = b8054f61; size =     18799; name = BIN\FREECELL.EX$
+    file[]: crc = dab4a76e; size =     11395; name = BIN\FREECELL.HL$
+    file[]: crc = 7ac269a3; size =     17156; name = BIN\IDLEWILD.EX$
+    file[]: crc = 018e2cf0; size =      8724; name = BIN\IDLEWILD.HL$
+    file[]: crc = e25ef60a; size =      5050; name = BIN\IWLIB.DL$
+    file[]: crc = d5a00f5d; size =     41370; name = BIN\JIGSAWED.EX$
+    file[]: crc = 821c5d40; size =     10253; name = BIN\JIGSAWED.HL$
+    file[]: crc = e2637562; size =      2104; name = BIN\LIFE.I$
+    file[]: crc = 80a1696f; size =      2401; name = BIN\MAND.I$
+    file[]: crc = 51a2e600; size =     57563; name = BIN\PIPE.EX$
+    file[]: crc = 61862647; size =     10394; name = BIN\PIPE.HL$
+    file[]: crc = cd4002f1; size =     40468; name = BIN\RATTLER.EX$
+    file[]: crc = dfb8db26; size =     10405; name = BIN\RATTLER.HL$
+    file[]: crc = 6cf0857c; size =     31972; name = BIN\RODENT.EX$
+    file[]: crc = cb34f550; size =      8100; name = BIN\RODENT.HL$
+    file[]: crc = 2bec957a; size =     65203; name = BIN\RUG.BM$
+    file[]: crc = ba16798f; size =      3943; name = BIN\SPIDER.I$
+    file[]: crc = 18ff0c57; size =      4669; name = BIN\SPOTLITE.I$
+    file[]: crc = d5e9b2e4; size =      6297; name = BIN\STONE00.DL$
+    file[]: crc = d5578f05; size =      4909; name = BIN\STONE01.DL$
+    file[]: crc = f166ba24; size =      4945; name = BIN\STONE02.DL$
+    file[]: crc = b8b82952; size =      4103; name = BIN\STONE03.DL$
+    file[]: crc = 26613d33; size =      8329; name = BIN\STONE04.DL$
+    file[]: crc = 25c15380; size =      5291; name = BIN\STONEE00.DL$
+    file[]: crc = 215d9c90; size =      4298; name = BIN\STONEE01.DL$
+    file[]: crc = 9d4954b6; size =      4133; name = BIN\STONEE02.DL$
+    file[]: crc = 26c376d9; size =      3527; name = BIN\STONEE03.DL$
+    file[]: crc = 39bda1bb; size =     20804; name = BIN\STONES.EX$
+    file[]: crc = 09240abc; size =     13083; name = BIN\STONES.HL$
+    file[]: crc = 4ae589bd; size =      3130; name = BIN\STRETCH.I$
+    file[]: crc = 7e40f85e; size =     19103; name = BIN\TANKER.BM$
+    file[]: crc = 8e2f8d4d; size =     21415; name = BIN\TREES.BM$
+    file[]: crc = 970f3566; size =     36055; name = BIN\TUTSTOMB.EX$
+    file[]: crc = 59adc5cf; size =     10248; name = BIN\TUTSTOMB.HL$
+    file[]: crc = 2784b229; size =    206924; name = BIN\VBRUN100.DL$
+    file[]: crc = 26dcdd1f; size =     11697; name = BIN\WEPUTIL.DL$
+
+
+
+
+end
+
+
+
+end
