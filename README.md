@@ -18,3 +18,9 @@ This pack allows installing Windows Entertainment Pack 1 and 2 in DREAMM. Suppor
 |Tetris|1|Does not work (Too many clocks or timers)|
 |TicTactics|1|Works|
 |Tut's Tomb|2|Works|
+
+# Other .dreammpacks
+- Humongous Entertainment: https://github.com/Phredreeke/humongous-dreamm
+- Sierra: https://github.com/M-A-Boucher/sierra-dreamm
+- 3DRealms/Apogee: https://github.com/M-A-Boucher/3drealms-dreamm
+- id Software: https://github.com/M-A-Boucher/idsoftware-dreamm
