@@ -1,0 +1,260 @@
+desc[msft-wep4]:
+
+name = Windows Entertainment Pack 4
+icon = msft-wep4.png
+machine = pc
+rootpath = C:\
+osenv= windows 3.11.002
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows setting
+//
+config[winsetting]:
+    title = Windows version
+    option[crop]:   wincrop = true; name = Crop window
+    option[full]: name = Full desktop; priority = 1
+end
+
+//
+//  Dr Black Jack
+//
+game[pc-en-blackjack]:
+    name = Dr Black Jack English version
+    anchorfile = BLAKJAK.EXE
+    launch = "$(rootpath)\BLAKJAK.EXE"
+    winres = 640x480x8
+    file[]: crc = 7e657b32; size =    136768; name = BLAKJAK.EXE
+    file[]: crc = efef6a3b; size =     28272; name = BLAKJAK.HLP
+    file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
+    file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
+
+
+end
+
+//
+//  Chess
+//
+game[pc-en-chess]:
+    name = Chess English version
+    anchorfile = CHESS.EXE
+    launch = "$(rootpath)\CHESS.EXE"
+    winres = 640x480x8
+    file[]: crc = 0aad4d7f; size =    232656; name = CHESS.EXE
+    file[]: crc = f2eb4c55; size =     37133; name = CHESS.HLP
+    file[]: crc = b57fbf16; size =     75744; name = OPENING.BK
+    file[]: crc = 02311524; size =      5603; name = OPENING.TXT
+    file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
+
+
+end
+
+//
+//  Chip's Challenge
+//
+game[pc-en-chips]:
+    name = Chip's Challenge English version
+    anchorfile = CHIPS.EXE
+    launch = "$(rootpath)\CHIPS.EXE"
+    audiohw = gmidi
+    winres = 640x480x8
+    file[]: crc = f68b6024; size =      9758; name = CHIP01.MID
+    file[]: crc = 3f0b3ebe; size =     11837; name = CHIP02.MID
+    file[]: crc = 377868c7; size =    108569; name = CHIPS.DAT
+    file[]: crc = 3b08b7af; size =    267776; name = CHIPS.EXE
+    file[]: crc = 9c35e641; size =     44501; name = CHIPS.HLP
+    file[]: crc = d523685b; size =      1172; name = CLICK1.WAV
+    file[]: crc = c34a5c04; size =       466; name = CLICK3.WAV
+    file[]: crc = 24693214; size =     16000; name = CMDIALOG.VBX
+    file[]: crc = e785e196; size =     11262; name = DITTY1.WAV
+    file[]: crc = 1d377fd6; size =      2022; name = DOOR.WAV
+    file[]: crc = 04253abc; size =      5964; name = HIT3.WAV
+    file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
+
+
+
+end
+
+
+
+
+//
+//  Go Figure!
+//
+game[pc-en-gofigure]:
+    name = Go Figure! English version
+    anchorfile = GOFIGURE.EXE
+    launch = "$(rootpath)\GOFIGURE.EXE"
+    winres = 640x480x8
+    file[]: crc = dc2fd1f3; size =     10224; name = ABOUTTET.DLL
+    file[]: crc = 8805a6ec; size =     29472; name = GAUGE.VBX
+    file[]: crc = d0bbd3f0; size =     70663; name = GOFIGURE.EXE
+    file[]: crc = 95320230; size =     29182; name = GOFIGURE.HLP
+    file[]: crc = 0edc1a41; size =     55248; name = THREED.VBX
+    file[]: crc = bfb34857; size =    271264; name = VBRUN100.DLL
+    file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
+
+
+end
+
+
+//
+//  JezzBall
+//
+game[pc-en-jezzball]:
+    name = JezzBall English version
+    anchorfile = JEZZBALL.EXE
+    launch = "$(rootpath)\JEZZBALL.EXE"
+    winres = 640x480x8
+    file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV
+    file[]: crc = 3b6d59fc; size =     49664; name = JEZZBALL.EXE
+    file[]: crc = f7efa7df; size =     17963; name = JEZZBALL.HLP
+    file[]: crc = 307992b2; size =      5638; name = JEZZDEAD.WAV
+    file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV
+    file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
+
+
+end
+
+
+//
+//  Maxwell's Maniac
+//
+game[pc-en-maxwell]:
+    name = Maxwell's Maniac English version
+    anchorfile = MAXWELL.EXE
+    launch = "$(rootpath)\MAXWELL.EXE"
+    winres = 640x480x8
+    file[]: crc = 2a5a861f; size =      1334; name = BLIP2.WAV
+    file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV
+    file[]: crc = 5c525675; size =      2758; name = BUMMER.WAV
+    file[]: crc = d523685b; size =      1172; name = CLICK1.WAV
+    file[]: crc = c34a5c04; size =       466; name = CLICK3.WAV
+    file[]: crc = e785e196; size =     11262; name = DITTY1.WAV
+    file[]: crc = 1d377fd6; size =      2022; name = DOOR.WAV
+    file[]: crc = 83c1c996; size =      7842; name = EXPLOSON.WAV
+    file[]: crc = 264a60f3; size =      1422; name = GAP.WAV
+    file[]: crc = 04253abc; size =      5964; name = HIT3.WAV
+    file[]: crc = f7efa7df; size =     17963; name = JEZZBALL.HLP
+    file[]: crc = 307992b2; size =      5638; name = JEZZDEAD.WAV
+    file[]: crc = 345e2bd2; size =      3062; name = LOSEGAME.WAV
+    file[]: crc = 49b3904a; size =     72704; name = MAXWELL.EXE
+    file[]: crc = 6869e2f4; size =     20429; name = MAXWELL.HLP
+    file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV
+    file[]: crc = b5e71970; size =      1562; name = OOF3.WAV
+    file[]: crc = d6244f40; size =       510; name = POP2.WAV
+    file[]: crc = 12029156; size =      2708; name = STRIKE.WAV
+    file[]: crc = 51582702; size =      8062; name = TELEPORT.WAV
+    file[]: crc = 331410c1; size =      7488; name = WATER2.WAV
+    file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
+    file[]: crc = e0e5c939; size =      5232; name = WINLEVEL.WAV
+    file[]: crc = 13a955f2; size =      1512; name = WIPE.WAV
+
+
+end
+
+
+//
+//  Tic Tac Drop
+//
+game[pc-en-tictacdrop]:
+    name = Tic Tac Drop English version
+    anchorfile = TICTACDP.EXE
+    launch = "$(rootpath)\TICTACDP.EXE"
+    winres = 640x480x8
+    file[]: crc = dc2fd1f3; size =     10224; name = ABOUTTET.DLL
+    file[]: crc = 24693214; size =     16000; name = CMDIALOG.VBX
+    file[]: crc = 0edc1a41; size =     55248; name = THREED.VBX
+    file[]: crc = 31ed0ccc; size =    120864; name = TICTACDP.EXE
+    file[]: crc = 34706421; size =     17679; name = TICTACDP.HLP
+    file[]: crc = bfb34857; size =    271264; name = VBRUN100.DLL
+    file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
+
+
+end
+
+//
+// installer
+//
+installer[pc-en-wep4-install]:
+    name = WEP4 Installer
+    anchorfile = WEPSETUP.IN_
+    launch = "$(rootpath)\SETUP.EXE"
+    installid = *
+    file[]: crc = cf73967b; size =     49647; name = _MSTEST.EX_
+    file[]: crc = 869c021f; size =    115593; name = CHIPS.EX_
+    file[]: crc = 2424159e; size =     46406; name = COMMDLG.DL_
+    file[]: crc = 5aee0fe1; size =     37722; name = MSCOMSTF.DL_
+    file[]: crc = 44d7b357; size =      6942; name = MSCUISTF.DL_
+    file[]: crc = cf42754d; size =     13519; name = MSDETSTF.DL_
+    file[]: crc = 124edf20; size =     36858; name = MSINSSTF.DL_
+    file[]: crc = 584fb7f2; size =      8234; name = MSSHLSTF.DL_
+    file[]: crc = 74d73849; size =      3611; name = MSUILSTF.DL_
+    file[]: crc = 1532a40f; size =      2100; name = README.TXT
+    file[]: crc = 7a7b8d78; size =     24624; name = SETUP.EXE
+    file[]: crc = 20675631; size =       545; name = SETUP.LST
+    file[]: crc = 681816cd; size =      3872; name = SETUPAPI.IN_
+    file[]: crc = ccd6f083; size =    171074; name = VBRUN100.DL_
+    file[]: crc = ab4d3c43; size =      5653; name = VER.DL_
+    file[]: crc = 62898c4e; size =      1203; name = WEPSETUP.IN_
+    file[]: crc = c9946f53; size =      1964; name = WEPSETUP.MS_
+    file[]: crc = 148fdfa4; size =      9339; name = ALERT.WA_
+    file[]: crc = 148fdfa4; size =      9339; name = BELL.WA_
+    file[]: crc = 7a1ebe22; size =     37365; name = BLAKJAK.EX_
+    file[]: crc = 01df0b73; size =     15324; name = BLAKJAK.HL_
+    file[]: crc = 2a313518; size =      1363; name = BLIP2.WA_
+    file[]: crc = 0df67639; size =      1012; name = BOUNCE.WA_
+    file[]: crc = 1f0eb17a; size =      2206; name = BUMMER.WA_
+    file[]: crc = e4b0dea9; size =     37126; name = CARDS.DL_
+    file[]: crc = 28ada61c; size =    105850; name = CHESS.EX_
+    file[]: crc = 86c304f4; size =     19793; name = CHESS.HL_
+    file[]: crc = c9e92c61; size =      4435; name = CHIP01.MI_
+    file[]: crc = 1af02cbd; size =      3796; name = CHIP02.MI_
+    file[]: crc = 5791e6f1; size =     45961; name = CHIPS.DA_
+    file[]: crc = 4230c8e1; size =     21293; name = CHIPS.HL_
+    file[]: crc = a2750024; size =       916; name = CLICK1.WA_
+    file[]: crc = c67d131a; size =       490; name = CLICK3.WA_
+    file[]: crc = f529e0c9; size =      7561; name = CMDIALOG.VB_
+    file[]: crc = 1ecbf1d6; size =      9572; name = DITTY1.WA_
+    file[]: crc = d54a1b5a; size =      1529; name = DOOR.WA_
+    file[]: crc = 32de6f21; size =      5086; name = EXPLOSON.WA_
+    file[]: crc = c6703d52; size =      1206; name = GAP.WA_
+    file[]: crc = 36ef785f; size =     14451; name = GAUGE.VB_
+    file[]: crc = be35afaf; size =     28580; name = GOFIGURE.EX_
+    file[]: crc = 58345012; size =     15631; name = GOFIGURE.HL_
+    file[]: crc = f60c8d5d; size =      4372; name = HIT3.WA_
+    file[]: crc = e9b76212; size =     21872; name = JEZZBALL.EX_
+    file[]: crc = 9cf68433; size =      8738; name = JEZZBALL.HL_
+    file[]: crc = 4e38f5ed; size =      4231; name = JEZZDEAD.WA_
+    file[]: crc = f8091fc6; size =      2475; name = LOSEGAME.WA_
+    file[]: crc = b2a7cf22; size =     30571; name = MAXWELL.EX_
+    file[]: crc = f6ee7885; size =      9892; name = MAXWELL.HL_
+    file[]: crc = e1681c31; size =      6670; name = NEWBALL.WA_
+    file[]: crc = b89155e0; size =      1360; name = OOF3.WA_
+    file[]: crc = 9cc8b48b; size =     39058; name = OPENING.BK_
+    file[]: crc = 6578164a; size =      2216; name = OPENING.TX_
+    file[]: crc = 0b1d1f9c; size =       532; name = POP2.WA_
+    file[]: crc = 47c4caf0; size =      2499; name = STRIKE.WA_
+    file[]: crc = 8712a69c; size =      5983; name = TELEPORT.WA_
+    file[]: crc = 359699b5; size =     24401; name = THREED.VB_
+    file[]: crc = 823e30de; size =     49804; name = TICTACDP.EX_
+    file[]: crc = da9df2e5; size =      8405; name = TICTACDP.HL_
+    file[]: crc = 00b7f311; size =      5121; name = WATER2.WA_
+    file[]: crc = 1f611b83; size =      9196; name = WEP4UTIL.DL_
+    file[]: crc = 8f5cf48b; size =      4851; name = WINLEVEL.WA_
+    file[]: crc = a3888ab3; size =      1247; name = WIPE.WA_
+
+
+
+
+
+end
+
+
+end
