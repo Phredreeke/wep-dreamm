@@ -31,7 +31,7 @@ This pack allows installing Windows Entertainment Pack 1 and 2 in DREAMM. Suppor
 |Tic Tac Drop|4|Does not work (crashes DREAMM on launch)|
 |TriPeaks|3|Works|
 |Tut's Tomb|2|Works|
-|WordZap|3|Does not work (crashes after starting game)|
+|WordZap|3|Does not work (unimplemented API WRITECOMM)|
 
 # Other .dreammpacks
 - Humongous Entertainment: https://github.com/Phredreeke/humongous-dreamm
