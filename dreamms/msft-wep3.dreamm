@@ -1,0 +1,188 @@
+desc[msft-wep3]:
+
+name = Windows Entertainment Pack 3
+icon = msft-wep3.png
+machine = pc
+rootpath = C:\
+osenv= windows 3.11.002
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows setting
+//
+config[winsetting]:
+    title = Windows version
+    option[crop]:   wincrop = true; name = Crop window
+    option[full]: name = Full desktop; priority = 1
+end
+
+//
+//  Fuji Golf
+//
+game[pc-en-fujigolf]:
+    name = Fuji Golf English version
+    anchorfile = FUJIGOLF.EXE
+    launch = "$(rootpath)\FUJIGOLF.EXE"
+    winres = 640x480x8
+    file[]: crc = 8903c2db; size =     24624; name = WINDOWS\FUJIGOLF.DAT
+    file[]: crc = 9d44cb65; size =    253952; name = FUJIGOLF.EXE
+    file[]: crc = 10350dcd; size =     17221; name = FUJIGOLF.HLP
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+
+
+end
+
+//
+//  Klotski
+//
+game[pc-en-klotski]:
+    name = Klotski English version
+    anchorfile = KLOTSKI.EXE
+    launch = "$(rootpath)\KLOTSKI.EXE"
+    winres = 640x480x8
+    file[]: crc = 7a098cf1; size =    147584; name = KLOTSKI.EXE
+    file[]: crc = d3c89284; size =     14074; name = KLOTSKI.HLP
+
+
+
+end
+
+//
+//  Life Genesis
+//
+game[pc-en-lifegen]:
+    name = Life Genesis English version
+    anchorfile = LIFEGEN.EXE
+    launch = "$(rootpath)\LIFEGEN.EXE"
+    winres = 640x480x8
+    file[]: crc = a04f27eb; size =     60752; name = LIFEGEN.EXE
+    file[]: crc = 8b301c92; size =     22978; name = LIFEGEN.HLP
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+
+
+
+end
+
+
+
+
+//
+//  SkiFree
+//
+game[pc-en-skifree]:
+    name = SkiFree English version
+    anchorfile = SKI.EXE
+    launch = "$(rootpath)\SKI.EXE"
+    winres = 640x480x8
+    file[]: crc = 708512f3; size =     88848; name = SKI.EXE
+
+
+
+end
+
+
+//
+//  TetraVex
+//
+game[pc-en-tetravex]:
+    name = TetraVex English version
+    anchorfile = TETRAVEX.EXE
+    launch = "$(rootpath)\TETRAVEX.EXE"
+    winres = 640x480x8
+    file[]: crc = a202f144; size =     35376; name = TETRAVEX.EXE
+    file[]: crc = 3f6e35dd; size =     15196; name = TETRAVEX.HLP
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+
+
+end
+
+//
+//  Tripeaks
+//
+game[pc-en-tripeaks]:
+    name = Tripeaks English version
+    anchorfile = TRIPEAKS.EXE
+    launch = "$(rootpath)\TRIPEAKS.EXE"
+    winres = 640x480x8
+    file[]: crc = 5abc5b14; size =    115056; name = TRIPEAKS.EXE
+    file[]: crc = 52ed0cbf; size =     16258; name = TRIPEAKS.HLP
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+
+
+
+end
+
+
+//
+//  WordZap
+//
+game[pc-en-wordzap]:
+    name = WordZap English version
+    anchorfile = WORDZAP.EXE
+    launch = "$(rootpath)\WORDZAP.EXE"
+    winres = 640x480x8
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
+    file[]: crc = 962552b7; size =     90112; name = WORDZAP.EXE
+    file[]: crc = 155419c5; size =     22705; name = WORDZAP.HLP
+
+
+
+end
+
+//
+// installer
+//
+installer[pc-en-wep3-install]:
+    name = WEP3 Installer
+    anchorfile = BINXZ.EXE
+    launch = "$(rootpath)\SETUP.EXE"
+    installid = *
+    file[]: crc = 889ef0c5; size =     34288; name = BINXZ.EXE
+    file[]: crc = b2b03c3a; size =      3131; name = README.TXT
+    file[]: crc = 94e0dc4d; size =      5280; name = SETUP.EXE
+    file[]: crc = a3c7942f; size =      2172; name = SETUP.INF
+    file[]: crc = 6b5d69a0; size =     11987; name = BIN\BOATRACE.I$
+    file[]: crc = 2992f049; size =      2259; name = BIN\CHOMP.I$
+    file[]: crc = 951b75e2; size =      2822; name = BIN\DIVIDE.I$
+    file[]: crc = 867b7fd8; size =      4648; name = BIN\FADEAWAY.I$
+    file[]: crc = 81804b23; size =     11727; name = BIN\FUJIGOLF.DA$
+    file[]: crc = 626def25; size =    132977; name = BIN\FUJIGOLF.EX$
+    file[]: crc = 827c0b1e; size =     11528; name = BIN\FUJIGOLF.HL$
+    file[]: crc = afbe84c1; size =     21149; name = BIN\IB.I$
+    file[]: crc = 7ac269a3; size =     17156; name = BIN\IDLEWILD.EX$
+    file[]: crc = 018e2cf0; size =      8724; name = BIN\IDLEWILD.HL$
+    file[]: crc = e25ef60a; size =      5050; name = BIN\IWLIB.DL$
+    file[]: crc = 7465d41d; size =     66125; name = BIN\KLOTSKI.EX$
+    file[]: crc = d53670ea; size =      9296; name = BIN\KLOTSKI.HL$
+    file[]: crc = bead739a; size =     26266; name = BIN\LIFEGEN.EX$
+    file[]: crc = 67c5a2a7; size =     15395; name = BIN\LIFEGEN.HL$
+    file[]: crc = 0a7051e0; size =      3500; name = BIN\RUG.I$
+    file[]: crc = ae68d7a1; size =     43867; name = BIN\SKI.EX$
+    file[]: crc = 8b54d676; size =      2416; name = BIN\SNAKES.I$
+    file[]: crc = ebcce007; size =     21839; name = BIN\TETRAVEX.EX$
+    file[]: crc = 52f256c5; size =      9838; name = BIN\TETRAVEX.HL$
+    file[]: crc = 06f82953; size =       858; name = BIN\TINFOIL.I$
+    file[]: crc = e9db4c13; size =     53849; name = BIN\TRIPEAKS.EX$
+    file[]: crc = 083bf661; size =     10612; name = BIN\TRIPEAKS.HL$
+    file[]: crc = 26dcdd1f; size =     11697; name = BIN\WEPUTIL.DL$
+    file[]: crc = 694b02ff; size =     65191; name = BIN\WORDZAP.EX$
+    file[]: crc = 01f9919d; size =     14415; name = BIN\WORDZAP.HL$
+
+
+
+
+
+
+end
+
+
+end
