@@ -1,7 +1,7 @@
 # Windows Entertainment DREAMM Pack
 This pack requires an experimental build of DREAMM available on the [DREAMM discord](https://discord.gg/MABzJBWj7W)
 
-This pack allows installing Windows Entertainment Pack 1 and 2 in DREAMM. Support for additional packs will be added later
+This pack allows installing Windows Entertainment Packs in DREAMM. The installer for WEP 4 does not currently work, but if the games in it can be added if you already have the extracted files, for example from a VM.
 
 |Game|Pack|Status|
 | --- | --- | --- |
