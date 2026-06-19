@@ -5,12 +5,14 @@ icon = msft-wep3.png
 machine = pc
 rootpath = C:\WEP
 osenv= windows 3.11.002
+FUJIGOLF = false
 
 //
 // filesystem
 //
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+mount[]: vpath = C:\WINDOWS; srcpath = $(ifsinstallpath)\WINDOWS; condition = $(FUJIGOLF)
 
 
 //
@@ -30,6 +32,7 @@ game[pc-en-fujigolf]:
     anchorfile = FUJIGOLF.EXE
     launch = "$(rootpath)\FUJIGOLF.EXE"
     winres = 640x480x8
+    FUJIGOLF = true
     file[]: crc = 8903c2db; size =     24624; name = WINDOWS\FUJIGOLF.DAT
     file[]: crc = 9d44cb65; size =    253952; name = FUJIGOLF.EXE
     file[]: crc = 10350dcd; size =     17221; name = FUJIGOLF.HLP
