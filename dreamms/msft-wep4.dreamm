@@ -3,7 +3,7 @@ desc[msft-wep4]:
 name = Windows Entertainment Pack 4
 icon = msft-wep4.png
 machine = pc
-rootpath = C:\
+rootpath = C:\WEP
 osenv= windows 3.11.002
 
 //

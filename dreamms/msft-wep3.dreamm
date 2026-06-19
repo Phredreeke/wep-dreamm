@@ -3,7 +3,7 @@ desc[msft-wep3]:
 name = Windows Entertainment Pack 3
 icon = msft-wep3.png
 machine = pc
-rootpath = C:\
+rootpath = C:\WEP
 osenv= windows 3.11.002
 
 //
