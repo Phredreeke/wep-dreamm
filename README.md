@@ -7,12 +7,12 @@ This pack allows installing Windows Entertainment Packs in DREAMM. The installer
 | --- | --- | --- |
 |Chess|4|Does not work (crashes DREAMM on launch)|
 |Chip's Challenge|4|Works|
-|Cruel|1|Works, visual errors as of 4.0x29|
+|Cruel|1|Works|
 |Dr. Black Jack|4|Does not work (unimplemented API OPENSOUND)|
-|Freecell|2|Works, visual errors as of 4.0x29|
+|Freecell|2|Works|
 |Fuji Golf|3|Does not work (crashes DREAMM on launch)|
 |Go Figure!|4|Does not work (crashes DREAMM on launch)|
-|Golf|1|Works with minor visual error, visual errors as of 4.0x29|
+|Golf|1|Works with minor visual error|
 |Jezzball|4|Does not work (unhandled 16-bit exception)|
 |Jigsawed|2|Runs with visual errors as of 4.0x29|
 |Klotski|3|Does not work (unimplemented API ISCHARALPHA)|
@@ -29,8 +29,8 @@ This pack allows installing Windows Entertainment Packs in DREAMM. The installer
 |Tetris|1|Does not work (Too many clocks or timers)|
 |TicTactics|1|Works|
 |Tic Tac Drop|4|Does not work (unimplemented API OPENSOUND)|
-|TriPeaks|3|Works, visual errors as of 4.0x29|
-|Tut's Tomb|2|Works, visual errors as of 4.0x29|
+|TriPeaks|3|Works|
+|Tut's Tomb|2|Works|
 |WordZap|3|Does not work (unimplemented API WRITECOMM)|
 
 # Other .dreammpacks
