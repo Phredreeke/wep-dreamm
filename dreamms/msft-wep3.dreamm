@@ -25,6 +25,16 @@ config[winsetting]:
 end
 
 //
+// warnings
+//
+INCOMPATIBLE = false
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = This game will crash DREAMM in tested version (4.0x34)
+end
+
+
+//
 //  Fuji Golf
 //
 game[pc-en-fujigolf]:
@@ -33,6 +43,7 @@ game[pc-en-fujigolf]:
     launch = "$(rootpath)\FUJIGOLF.EXE"
     winres = 640x480x8
     FUJIGOLF = true
+    INCOMPATIBLE = true
     file[]: crc = 8903c2db; size =     24624; name = WINDOWS\FUJIGOLF.DAT
     file[]: crc = 9d44cb65; size =    253952; name = FUJIGOLF.EXE
     file[]: crc = 10350dcd; size =     17221; name = FUJIGOLF.HLP

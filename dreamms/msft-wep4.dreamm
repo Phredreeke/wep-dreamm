@@ -23,6 +23,15 @@ config[winsetting]:
 end
 
 //
+// warnings
+//
+INCOMPATIBLE = false
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = This game will crash DREAMM in tested version (4.0x34)
+end
+
+//
 //  Dr Black Jack
 //
 game[pc-en-blackjack]:
@@ -46,6 +55,7 @@ game[pc-en-chess]:
     anchorfile = CHESS.EXE
     launch = "$(rootpath)\CHESS.EXE"
     winres = 640x480x8
+    INCOMPATIBLE = true
     file[]: crc = 0aad4d7f; size =    232656; name = CHESS.EXE
     file[]: crc = f2eb4c55; size =     37133; name = CHESS.HLP
     file[]: crc = b57fbf16; size =     75744; name = OPENING.BK
@@ -92,6 +102,7 @@ game[pc-en-gofigure]:
     anchorfile = GOFIGURE.EXE
     launch = "$(rootpath)\GOFIGURE.EXE"
     winres = 640x480x8
+    INCOMPATIBLE = true
     file[]: crc = dc2fd1f3; size =     10224; name = ABOUTTET.DLL
     file[]: crc = 8805a6ec; size =     29472; name = GAUGE.VBX
     file[]: crc = d0bbd3f0; size =     70663; name = GOFIGURE.EXE
