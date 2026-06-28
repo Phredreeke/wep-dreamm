@@ -32,6 +32,7 @@ This pack allows installing Windows Entertainment Packs in DREAMM. The installer
 |TriPeaks|3*|Works|
 |Tut's Tomb|2*|Works|
 |WordZap|3|Does not work (unimplemented API WRITECOMM)|
+
 Games with an asterisk are also in Best of Entertainment Pack
 
 # Other .dreammpacks
