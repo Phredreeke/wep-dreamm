@@ -71,10 +71,10 @@ game[pc-en-chips]:
     file[]: crc = 9c35e641; size =     44501; name = CHIPS.HLP
     file[]: crc = d523685b; size =      1172; name = CLICK1.WAV
     file[]: crc = c34a5c04; size =       466; name = CLICK3.WAV
-    file[]: crc = 24693214; size =     16000; name = CMDIALOG.VBX
+//    file[]: crc = 24693214; size =     16000; name = CMDIALOG.VBX
     file[]: crc = e785e196; size =     11262; name = DITTY1.WAV
     file[]: crc = 1d377fd6; size =      2022; name = DOOR.WAV
-    file[]: crc = 04253abc; size =      5964; name = HIT3.WAV
+//    file[]: crc = 04253abc; size =      5964; name = HIT3.WAV
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
 
 
@@ -116,7 +116,7 @@ game[pc-en-jezzball]:
     file[]: crc = 3b6d59fc; size =     49664; name = JEZZBALL.EXE
     file[]: crc = f7efa7df; size =     17963; name = JEZZBALL.HLP
     file[]: crc = 307992b2; size =      5638; name = JEZZDEAD.WAV
-    file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV
+//    file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
 
 
