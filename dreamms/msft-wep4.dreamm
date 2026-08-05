@@ -17,7 +17,7 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 // Windows setting
 //
 config[winsetting]:
-    title = Windows version
+    title = Video Configuration
     option[crop]:   wincrop = true; name = Crop window
     option[full]: name = Full desktop; priority = 1
 end
@@ -28,7 +28,7 @@ end
 INCOMPATIBLE = false
 warning[incompatible]:
     condition = $(INCOMPATIBLE)
-    text = This game will crash DREAMM in tested version (4.0x34)
+    text = This game will crash DREAMM in tested version (4.0x43)
 end
 
 //
@@ -74,6 +74,11 @@ game[pc-en-chips]:
     launch = "$(rootpath)\CHIPS.EXE"
     audiohw = gmidi
     winres = 640x480x8
+    file[]: crc = 5a02ba9c; size =     10400; name = BELL.WAV
+    file[]: crc = 2a5a861f; size =      1334; name = BLIP2.WAV
+    file[]: crc = 5c525675; size =      2758; name = BUMMER.WAV
+    file[]: name = CANYON.MID; optional = true
+    file[]: name = CHIMES.WAV; optional = true
     file[]: crc = f68b6024; size =      9758; name = CHIP01.MID
     file[]: crc = 3f0b3ebe; size =     11837; name = CHIP02.MID
     file[]: crc = 377868c7; size =    108569; name = CHIPS.DAT
@@ -81,10 +86,13 @@ game[pc-en-chips]:
     file[]: crc = 9c35e641; size =     44501; name = CHIPS.HLP
     file[]: crc = d523685b; size =      1172; name = CLICK1.WAV
     file[]: crc = c34a5c04; size =       466; name = CLICK3.WAV
-//    file[]: crc = 24693214; size =     16000; name = CMDIALOG.VBX
     file[]: crc = e785e196; size =     11262; name = DITTY1.WAV
     file[]: crc = 1d377fd6; size =      2022; name = DOOR.WAV
-//    file[]: crc = 04253abc; size =      5964; name = HIT3.WAV
+    file[]: crc = b5e71970; size =      1562; name = OOF3.WAV
+    file[]: crc = d6244f40; size =       510; name = POP2.WAV
+    file[]: crc = 12029156; size =      2708; name = STRIKE.WAV; optional = true
+    file[]: crc = 51582702; size =      8062; name = TELEPORT.WAV
+    file[]: crc = 331410c1; size =      7488; name = WATER2.WAV
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
 
 
@@ -102,7 +110,6 @@ game[pc-en-gofigure]:
     anchorfile = GOFIGURE.EXE
     launch = "$(rootpath)\GOFIGURE.EXE"
     winres = 640x480x8
-    INCOMPATIBLE = true
     file[]: crc = dc2fd1f3; size =     10224; name = ABOUTTET.DLL
     file[]: crc = 8805a6ec; size =     29472; name = GAUGE.VBX
     file[]: crc = d0bbd3f0; size =     70663; name = GOFIGURE.EXE
@@ -123,12 +130,18 @@ game[pc-en-jezzball]:
     anchorfile = JEZZBALL.EXE
     launch = "$(rootpath)\JEZZBALL.EXE"
     winres = 640x480x8
+    file[]: crc = 5a02ba9c; size =     10400; name = ALERT.WAV; optional = true
     file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV
+    file[]: crc = 345e2bd2; size =      3062; name = GAMELOST.WAV; optional = true
+    file[]: crc = 264a60f3; size =      1422; name = GAP.WAV; optional = true
     file[]: crc = 3b6d59fc; size =     49664; name = JEZZBALL.EXE
     file[]: crc = f7efa7df; size =     17963; name = JEZZBALL.HLP
     file[]: crc = 307992b2; size =      5638; name = JEZZDEAD.WAV
-//    file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV
+    file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV; optional = true
+    file[]: name = TADA.WAV; optional = true
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
+    file[]: crc = e0e5c939; size =      5232; name = WINLEVEL.WAV; optional = true
+    file[]: crc = 13a955f2; size =      1512; name = WIPE.WAV; optional = true
 
 
 end
@@ -142,30 +155,19 @@ game[pc-en-maxwell]:
     anchorfile = MAXWELL.EXE
     launch = "$(rootpath)\MAXWELL.EXE"
     winres = 640x480x8
-    file[]: crc = 2a5a861f; size =      1334; name = BLIP2.WAV
+    file[]: crc = 5a02ba9c; size =     10400; name = BELL.WAV
     file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV
-    file[]: crc = 5c525675; size =      2758; name = BUMMER.WAV
-    file[]: crc = d523685b; size =      1172; name = CLICK1.WAV
-    file[]: crc = c34a5c04; size =       466; name = CLICK3.WAV
-    file[]: crc = e785e196; size =     11262; name = DITTY1.WAV
-    file[]: crc = 1d377fd6; size =      2022; name = DOOR.WAV
     file[]: crc = 83c1c996; size =      7842; name = EXPLOSON.WAV
+    file[]: crc = 345e2bd2; size =      3062; name = GAMELOST.WAV
     file[]: crc = 264a60f3; size =      1422; name = GAP.WAV
-    file[]: crc = 04253abc; size =      5964; name = HIT3.WAV
     file[]: crc = f7efa7df; size =     17963; name = JEZZBALL.HLP
-    file[]: crc = 307992b2; size =      5638; name = JEZZDEAD.WAV
-    file[]: crc = 345e2bd2; size =      3062; name = LOSEGAME.WAV
     file[]: crc = 49b3904a; size =     72704; name = MAXWELL.EXE
     file[]: crc = 6869e2f4; size =     20429; name = MAXWELL.HLP
     file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV
-    file[]: crc = b5e71970; size =      1562; name = OOF3.WAV
-    file[]: crc = d6244f40; size =       510; name = POP2.WAV
-    file[]: crc = 12029156; size =      2708; name = STRIKE.WAV
-    file[]: crc = 51582702; size =      8062; name = TELEPORT.WAV
-    file[]: crc = 331410c1; size =      7488; name = WATER2.WAV
+    file[]: crc = 307992b2; size =      5638; name = PUTDOWN.WAV
+    file[]: name = TADA.WAV; optional = true
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
     file[]: crc = e0e5c939; size =      5232; name = WINLEVEL.WAV
-    file[]: crc = 13a955f2; size =      1512; name = WIPE.WAV
 
 
 end
@@ -198,6 +200,7 @@ installer[pc-en-wep4-install]:
     anchorfile = WEPSETUP.IN_
     launch = "$(rootpath)\SETUP.EXE"
     installid = *
+    rootpath = A:\
     file[]: crc = cf73967b; size =     49647; name = _MSTEST.EX_
     file[]: crc = 869c021f; size =    115593; name = CHIPS.EX_
     file[]: crc = 2424159e; size =     46406; name = COMMDLG.DL_
