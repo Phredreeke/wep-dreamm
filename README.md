@@ -10,16 +10,16 @@ This pack allows installing Windows Entertainment Packs in DREAMM. The installer
 |Cruel|1|Works|
 |Dr. Black Jack|4*|Works as of 4.0x40|
 |Freecell|2*|Works|
-|Fuji Golf|3|Does not work (unimplemented API ARC)|
+|Fuji Golf|3|Works as of 4.0x44|
 |Go Figure!|4|Works as of 4.0x42|
-|Golf|1*|Works with minor visual error|
+|Golf|1*|Works|
 |Jezzball|4*|Works as of 4.0x41|
 |Jigsawed|2|Runs with visual errors as of 4.0x29|
 |Klotski|3|Works as of 4.0x42|
 |Life Genesis|3|Works|
 |Maxwell's Maniac|4|Works as of 4.0x41|
 |Minesweeper|1|Works as of 4.0x42|
-|Pegged|1|Does not work (unimplemented API ARC)|
+|Pegged|1|Works as of 4.0x44|
 |Rattler|2|Works as of 4.0x25|
 |Rodent's Revenge|2*|Works as of 4.0x25|
 |SkiFree|3*|Works|
