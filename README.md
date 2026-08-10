@@ -31,7 +31,7 @@ This pack allows installing Windows Entertainment Packs in DREAMM. The installer
 |Tic Tac Drop|4|Works as of 4.0x40|
 |TriPeaks|3*|Works|
 |Tut's Tomb|2*|Works|
-|WordZap|3|Does not work (unimplemented API WRITECOMM)|
+|WordZap|3|Works as of 4.0x46|
 
 Games with an asterisk are also in Best of Entertainment Pack
 
