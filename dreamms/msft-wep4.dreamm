@@ -110,7 +110,6 @@ game[pc-en-gofigure]:
     anchorfile = GOFIGURE.EXE
     launch = "$(rootpath)\GOFIGURE.EXE"
     winres = 640x480x8
-    file[]: crc = dc2fd1f3; size =     10224; name = ABOUTTET.DLL
     file[]: crc = 8805a6ec; size =     29472; name = GAUGE.VBX
     file[]: crc = d0bbd3f0; size =     70663; name = GOFIGURE.EXE
     file[]: crc = 95320230; size =     29182; name = GOFIGURE.HLP
@@ -181,13 +180,16 @@ game[pc-en-tictacdrop]:
     anchorfile = TICTACDP.EXE
     launch = "$(rootpath)\TICTACDP.EXE"
     winres = 640x480x8
-    file[]: crc = dc2fd1f3; size =     10224; name = ABOUTTET.DLL
+    file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV; optional = true
+    file[]: name = CHIMES.WAV; optional = true
     file[]: crc = 24693214; size =     16000; name = CMDIALOG.VBX
+    file[]: crc = 345e2bd2; size =      3062; name = LOSEGAME.WAV; optional = true
     file[]: crc = 0edc1a41; size =     55248; name = THREED.VBX
     file[]: crc = 31ed0ccc; size =    120864; name = TICTACDP.EXE
     file[]: crc = 34706421; size =     17679; name = TICTACDP.HLP
     file[]: crc = bfb34857; size =    271264; name = VBRUN100.DLL
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
+    file[]: crc = e0e5c939; size =      5232; name = WINLEVEL.WAV; optional = true
 
 
 end
