@@ -1,0 +1,96 @@
+desc[msft-wepsampler]:
+
+name = Windows Entertainment Pack Verbatim Sampler
+icon = msft-wepsampler.png
+machine = pc
+rootpath = C:\WEP
+osenv= windows 3.11.002
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// installer
+//
+installer[pc-en-wepsampler1]:
+    name = WEP Verbatim Sampler Installer
+    anchorfile = WEPSETUP.IN_
+    launch = "$(rootpath)\SETUP.EXE"
+    installid = *
+    file[]: crc = cf73967b; size =     49647; name = _MSTEST.EX_
+    file[]: crc = 3131b863; size =      3863; name = ABOUTWEP.DL_
+    file[]: crc = 7a1ebe22; size =     37365; name = BLAKJAK.EX_
+    file[]: crc = 01df0b73; size =     15324; name = BLAKJAK.HL_
+    file[]: crc = e4b0dea9; size =     37126; name = CARDS.DL_
+    file[]: crc = 73b2b76d; size =     49879; name = COMMDLG.DL_
+    file[]: crc = 12ca7f04; size =     15005; name = FREECELL.EX_
+    file[]: crc = 729dd58d; size =      8908; name = FREECELL.HL_
+    file[]: crc = 5aee0fe1; size =     37722; name = MSCOMSTF.DL_
+    file[]: crc = 35e683ef; size =     13638; name = MSCUISTF.DL_
+    file[]: crc = cf42754d; size =     13519; name = MSDETSTF.DL_
+    file[]: crc = 124edf20; size =     36858; name = MSINSSTF.DL_
+    file[]: crc = 584fb7f2; size =      8234; name = MSSHLSTF.DL_
+    file[]: crc = 74d73849; size =      3611; name = MSUILSTF.DL_
+    file[]: crc = 7a7b8d78; size =     24624; name = SETUP.EXE
+    file[]: crc = eb7cd51b; size =       555; name = SETUP.LST
+    file[]: crc = 681816cd; size =      3872; name = SETUPAPI.IN_
+    file[]: crc = a967c7b1; size =     34015; name = SKI.EX_
+    file[]: crc = ced2e26b; size =     47376; name = TP.EX_
+    file[]: crc = fdac7386; size =     13144; name = TP.HL_
+    file[]: crc = ab4d3c43; size =      5653; name = VER.DL_
+    file[]: crc = 1f611b83; size =      9196; name = WEP4UTIL.DL_
+    file[]: crc = 582307df; size =       656; name = WEPSETUP.IN_
+    file[]: crc = fab33e02; size =      1884; name = WEPSETUP.MS_
+    file[]: crc = 71c36da8; size =      9142; name = WEPUTIL.DL_
+
+
+end
+
+//
+// installer
+//
+installer[pc-en-wepsampler2]:
+    name = WEP Verbatim Sampler Installer
+    anchorfile = WEPSETUP.IN_
+    launch = "$(rootpath)\SETUP.EXE"
+    installid = *
+    file[]: crc = cf73967b; size =     49647; name = _MSTEST.EX_
+    file[]: crc = 3131b863; size =      3863; name = ABOUTWEP.DL_
+    file[]: crc = 0df67639; size =      1012; name = BOUNCE.WA_
+    file[]: crc = e4b0dea9; size =     37126; name = CARDS.DL_
+    file[]: crc = 73b2b76d; size =     49879; name = COMMDLG.DL_
+    file[]: crc = cc84f4d9; size =      8820; name = CRUEL.EX_
+    file[]: crc = 3dae4024; size =      7901; name = CRUEL.HL_
+    file[]: crc = 885895d6; size =      8953; name = FIELD100.DL_
+    file[]: crc = e9b76212; size =     21872; name = JEZZBALL.EX_
+    file[]: crc = 9cf68433; size =      8738; name = JEZZBALL.HL_
+    file[]: crc = 4e38f5ed; size =      4231; name = JEZZDEAD.WA_
+    file[]: crc = a82071da; size =     48059; name = KLOTSKI.EX_
+    file[]: crc = 12bde5f5; size =      7180; name = KLOTSKI.HL_
+    file[]: crc = 5aee0fe1; size =     37722; name = MSCOMSTF.DL_
+    file[]: crc = bb903dcb; size =     13708; name = MSCUISTF.DL_
+    file[]: crc = cf42754d; size =     13519; name = MSDETSTF.DL_
+    file[]: crc = 124edf20; size =     36858; name = MSINSSTF.DL_
+    file[]: crc = 584fb7f2; size =      8234; name = MSSHLSTF.DL_
+    file[]: crc = 74d73849; size =      3611; name = MSUILSTF.DL_
+    file[]: crc = e1681c31; size =      6670; name = NEWBALL.WA_
+    file[]: crc = 6210ad1f; size =     24909; name = RODENT.EX_
+    file[]: crc = 62f2d4fb; size =     14344; name = RODENT.HL_
+    file[]: crc = 7a7b8d78; size =     24624; name = SETUP.EXE
+    file[]: crc = da224f2f; size =       557; name = SETUP.LST
+    file[]: crc = 1903731f; size =      3882; name = SETUPAPI.IN_
+    file[]: crc = 1a43fd90; size =    171074; name = VBRUN100.DL_
+    file[]: crc = ab4d3c43; size =      5653; name = VER.DL_
+    file[]: crc = 1f611b83; size =      9196; name = WEP4UTIL.DL_
+    file[]: crc = d0a48b6e; size =       777; name = WEPSETUP.IN_
+    file[]: crc = f53ec430; size =      1923; name = WEPSETUP.MS_
+    file[]: crc = 71c36da8; size =      9142; name = WEPUTIL.DL_
+
+
+end
+
+end
