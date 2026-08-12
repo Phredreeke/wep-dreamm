@@ -77,8 +77,8 @@ game[pc-en-chips]:
     file[]: crc = 5a02ba9c; size =     10400; name = BELL.WAV
     file[]: crc = 2a5a861f; size =      1334; name = BLIP2.WAV
     file[]: crc = 5c525675; size =      2758; name = BUMMER.WAV
-    file[]: name = CANYON.MID; optional = true
-    file[]: name = CHIMES.WAV; optional = true
+    file[]: name = CANYON.MID; optional = true // Windows built in sound
+    file[]: name = CHIMES.WAV; optional = true // Windows built in sound
     file[]: crc = f68b6024; size =      9758; name = CHIP01.MID
     file[]: crc = 3f0b3ebe; size =     11837; name = CHIP02.MID
     file[]: crc = 377868c7; size =    108569; name = CHIPS.DAT
@@ -90,7 +90,7 @@ game[pc-en-chips]:
     file[]: crc = 1d377fd6; size =      2022; name = DOOR.WAV
     file[]: crc = b5e71970; size =      1562; name = OOF3.WAV
     file[]: crc = d6244f40; size =       510; name = POP2.WAV
-    file[]: crc = 12029156; size =      2708; name = STRIKE.WAV; optional = true
+    file[]: crc = 12029156; size =      2708; name = STRIKE.WAV; optional = true // sound is omitted from best of WEP
     file[]: crc = 51582702; size =      8062; name = TELEPORT.WAV
     file[]: crc = 331410c1; size =      7488; name = WATER2.WAV
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
@@ -129,18 +129,18 @@ game[pc-en-jezzball]:
     anchorfile = JEZZBALL.EXE
     launch = "$(rootpath)\JEZZBALL.EXE"
     winres = 640x480x8
-    file[]: crc = 5a02ba9c; size =     10400; name = ALERT.WAV; optional = true
+    file[]: crc = 5a02ba9c; size =     10400; name = ALERT.WAV; optional = true // sound is omitted from best of WEP
     file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV
-    file[]: crc = 345e2bd2; size =      3062; name = GAMELOST.WAV; optional = true
+    file[]: name = GAMELOST.WAV; optional = true // referenced in EXE but not found in WEP4 installation
     file[]: crc = 264a60f3; size =      1422; name = GAP.WAV; optional = true
     file[]: crc = 3b6d59fc; size =     49664; name = JEZZBALL.EXE
     file[]: crc = f7efa7df; size =     17963; name = JEZZBALL.HLP
     file[]: crc = 307992b2; size =      5638; name = JEZZDEAD.WAV
-    file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV; optional = true
-    file[]: name = TADA.WAV; optional = true
+    file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV; optional = true // sound is omitted from best of WEP
+    file[]: name = TADA.WAV; optional = true // Windows built in sound
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
-    file[]: crc = e0e5c939; size =      5232; name = WINLEVEL.WAV; optional = true
-    file[]: crc = 13a955f2; size =      1512; name = WIPE.WAV; optional = true
+    file[]: crc = e0e5c939; size =      5232; name = WINLEVEL.WAV; optional = true // sound is omitted from best of WEP
+    file[]: crc = 13a955f2; size =      1512; name = WIPE.WAV; optional = true // sound is omitted from Verbatim samples
 
 
 end
@@ -157,14 +157,13 @@ game[pc-en-maxwell]:
     file[]: crc = 5a02ba9c; size =     10400; name = BELL.WAV
     file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV
     file[]: crc = 83c1c996; size =      7842; name = EXPLOSON.WAV
-    file[]: crc = 345e2bd2; size =      3062; name = GAMELOST.WAV
+    file[]: name = GAMELOST.WAV; optional = true // referenced in EXE but not found in WEP4 installation
     file[]: crc = 264a60f3; size =      1422; name = GAP.WAV
-    file[]: crc = f7efa7df; size =     17963; name = JEZZBALL.HLP
     file[]: crc = 49b3904a; size =     72704; name = MAXWELL.EXE
     file[]: crc = 6869e2f4; size =     20429; name = MAXWELL.HLP
     file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV
-    file[]: crc = 307992b2; size =      5638; name = PUTDOWN.WAV
-    file[]: name = TADA.WAV; optional = true
+    file[]: name = PUTDOWN.WAV // referenced in EXE but not found in WEP4 installation
+    file[]: name = TADA.WAV; optional = true // Windows built in sound
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
     file[]: crc = e0e5c939; size =      5232; name = WINLEVEL.WAV
 
@@ -181,7 +180,7 @@ game[pc-en-tictacdrop]:
     launch = "$(rootpath)\TICTACDP.EXE"
     winres = 640x480x8
     file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV; optional = true
-    file[]: name = CHIMES.WAV; optional = true
+    file[]: name = CHIMES.WAV; optional = true // Windows built in sound
     file[]: crc = 24693214; size =     16000; name = CMDIALOG.VBX
     file[]: crc = 345e2bd2; size =      3062; name = LOSEGAME.WAV; optional = true
     file[]: crc = 0edc1a41; size =     55248; name = THREED.VBX
@@ -200,71 +199,70 @@ end
 installer[pc-en-wep4-install]:
     name = WEP4 Installer
     anchorfile = WEPSETUP.IN_
-    launch = "$(rootpath)\SETUP.EXE"
+    launch = "$(rootpath)\DISK1\SETUP.EXE"
     installid = *
-    rootpath = A:\
-    file[]: crc = cf73967b; size =     49647; name = _MSTEST.EX_
-    file[]: crc = 869c021f; size =    115593; name = CHIPS.EX_
-    file[]: crc = 2424159e; size =     46406; name = COMMDLG.DL_
-    file[]: crc = 5aee0fe1; size =     37722; name = MSCOMSTF.DL_
-    file[]: crc = 44d7b357; size =      6942; name = MSCUISTF.DL_
-    file[]: crc = cf42754d; size =     13519; name = MSDETSTF.DL_
-    file[]: crc = 124edf20; size =     36858; name = MSINSSTF.DL_
-    file[]: crc = 584fb7f2; size =      8234; name = MSSHLSTF.DL_
-    file[]: crc = 74d73849; size =      3611; name = MSUILSTF.DL_
-    file[]: crc = 1532a40f; size =      2100; name = README.TXT
-    file[]: crc = 7a7b8d78; size =     24624; name = SETUP.EXE
-    file[]: crc = 20675631; size =       545; name = SETUP.LST
-    file[]: crc = 681816cd; size =      3872; name = SETUPAPI.IN_
-    file[]: crc = ccd6f083; size =    171074; name = VBRUN100.DL_
-    file[]: crc = ab4d3c43; size =      5653; name = VER.DL_
-    file[]: crc = 62898c4e; size =      1203; name = WEPSETUP.IN_
-    file[]: crc = c9946f53; size =      1964; name = WEPSETUP.MS_
-    file[]: crc = 148fdfa4; size =      9339; name = ALERT.WA_
-    file[]: crc = 148fdfa4; size =      9339; name = BELL.WA_
-    file[]: crc = 7a1ebe22; size =     37365; name = BLAKJAK.EX_
-    file[]: crc = 01df0b73; size =     15324; name = BLAKJAK.HL_
-    file[]: crc = 2a313518; size =      1363; name = BLIP2.WA_
-    file[]: crc = 0df67639; size =      1012; name = BOUNCE.WA_
-    file[]: crc = 1f0eb17a; size =      2206; name = BUMMER.WA_
-    file[]: crc = e4b0dea9; size =     37126; name = CARDS.DL_
-    file[]: crc = 28ada61c; size =    105850; name = CHESS.EX_
-    file[]: crc = 86c304f4; size =     19793; name = CHESS.HL_
-    file[]: crc = c9e92c61; size =      4435; name = CHIP01.MI_
-    file[]: crc = 1af02cbd; size =      3796; name = CHIP02.MI_
-    file[]: crc = 5791e6f1; size =     45961; name = CHIPS.DA_
-    file[]: crc = 4230c8e1; size =     21293; name = CHIPS.HL_
-    file[]: crc = a2750024; size =       916; name = CLICK1.WA_
-    file[]: crc = c67d131a; size =       490; name = CLICK3.WA_
-    file[]: crc = f529e0c9; size =      7561; name = CMDIALOG.VB_
-    file[]: crc = 1ecbf1d6; size =      9572; name = DITTY1.WA_
-    file[]: crc = d54a1b5a; size =      1529; name = DOOR.WA_
-    file[]: crc = 32de6f21; size =      5086; name = EXPLOSON.WA_
-    file[]: crc = c6703d52; size =      1206; name = GAP.WA_
-    file[]: crc = 36ef785f; size =     14451; name = GAUGE.VB_
-    file[]: crc = be35afaf; size =     28580; name = GOFIGURE.EX_
-    file[]: crc = 58345012; size =     15631; name = GOFIGURE.HL_
-    file[]: crc = f60c8d5d; size =      4372; name = HIT3.WA_
-    file[]: crc = e9b76212; size =     21872; name = JEZZBALL.EX_
-    file[]: crc = 9cf68433; size =      8738; name = JEZZBALL.HL_
-    file[]: crc = 4e38f5ed; size =      4231; name = JEZZDEAD.WA_
-    file[]: crc = f8091fc6; size =      2475; name = LOSEGAME.WA_
-    file[]: crc = b2a7cf22; size =     30571; name = MAXWELL.EX_
-    file[]: crc = f6ee7885; size =      9892; name = MAXWELL.HL_
-    file[]: crc = e1681c31; size =      6670; name = NEWBALL.WA_
-    file[]: crc = b89155e0; size =      1360; name = OOF3.WA_
-    file[]: crc = 9cc8b48b; size =     39058; name = OPENING.BK_
-    file[]: crc = 6578164a; size =      2216; name = OPENING.TX_
-    file[]: crc = 0b1d1f9c; size =       532; name = POP2.WA_
-    file[]: crc = 47c4caf0; size =      2499; name = STRIKE.WA_
-    file[]: crc = 8712a69c; size =      5983; name = TELEPORT.WA_
-    file[]: crc = 359699b5; size =     24401; name = THREED.VB_
-    file[]: crc = 823e30de; size =     49804; name = TICTACDP.EX_
-    file[]: crc = da9df2e5; size =      8405; name = TICTACDP.HL_
-    file[]: crc = 00b7f311; size =      5121; name = WATER2.WA_
-    file[]: crc = 1f611b83; size =      9196; name = WEP4UTIL.DL_
-    file[]: crc = 8f5cf48b; size =      4851; name = WINLEVEL.WA_
-    file[]: crc = a3888ab3; size =      1247; name = WIPE.WA_
+    file[]: crc = cf73967b; size =     49647; name = DISK1\_MSTEST.EX_
+    file[]: crc = 869c021f; size =    115593; name = DISK1\CHIPS.EX_
+    file[]: crc = 2424159e; size =     46406; name = DISK1\COMMDLG.DL_
+    file[]: crc = 5aee0fe1; size =     37722; name = DISK1\MSCOMSTF.DL_
+    file[]: crc = 44d7b357; size =      6942; name = DISK1\MSCUISTF.DL_
+    file[]: crc = cf42754d; size =     13519; name = DISK1\MSDETSTF.DL_
+    file[]: crc = 124edf20; size =     36858; name = DISK1\MSINSSTF.DL_
+    file[]: crc = 584fb7f2; size =      8234; name = DISK1\MSSHLSTF.DL_
+    file[]: crc = 74d73849; size =      3611; name = DISK1\MSUILSTF.DL_
+    file[]: crc = 1532a40f; size =      2100; name = DISK1\README.TXT
+    file[]: crc = 7a7b8d78; size =     24624; name = DISK1\SETUP.EXE
+    file[]: crc = 20675631; size =       545; name = DISK1\SETUP.LST
+    file[]: crc = 681816cd; size =      3872; name = DISK1\SETUPAPI.IN_
+    file[]: crc = ccd6f083; size =    171074; name = DISK1\VBRUN100.DL_
+    file[]: crc = ab4d3c43; size =      5653; name = DISK1\VER.DL_
+    file[]: crc = 62898c4e; size =      1203; name = DISK1\WEPSETUP.IN_
+    file[]: crc = c9946f53; size =      1964; name = DISK1\WEPSETUP.MS_
+    file[]: crc = 148fdfa4; size =      9339; name = DISK2\ALERT.WA_
+    file[]: crc = 148fdfa4; size =      9339; name = DISK2\BELL.WA_
+    file[]: crc = 7a1ebe22; size =     37365; name = DISK2\BLAKJAK.EX_
+    file[]: crc = 01df0b73; size =     15324; name = DISK2\BLAKJAK.HL_
+    file[]: crc = 2a313518; size =      1363; name = DISK2\BLIP2.WA_
+    file[]: crc = 0df67639; size =      1012; name = DISK2\BOUNCE.WA_
+    file[]: crc = 1f0eb17a; size =      2206; name = DISK2\BUMMER.WA_
+    file[]: crc = e4b0dea9; size =     37126; name = DISK2\CARDS.DL_
+    file[]: crc = 28ada61c; size =    105850; name = DISK2\CHESS.EX_
+    file[]: crc = 86c304f4; size =     19793; name = DISK2\CHESS.HL_
+    file[]: crc = c9e92c61; size =      4435; name = DISK2\CHIP01.MI_
+    file[]: crc = 1af02cbd; size =      3796; name = DISK2\CHIP02.MI_
+    file[]: crc = 5791e6f1; size =     45961; name = DISK2\CHIPS.DA_
+    file[]: crc = 4230c8e1; size =     21293; name = DISK2\CHIPS.HL_
+    file[]: crc = a2750024; size =       916; name = DISK2\CLICK1.WA_
+    file[]: crc = c67d131a; size =       490; name = DISK2\CLICK3.WA_
+    file[]: crc = f529e0c9; size =      7561; name = DISK2\CMDIALOG.VB_
+    file[]: crc = 1ecbf1d6; size =      9572; name = DISK2\DITTY1.WA_
+    file[]: crc = d54a1b5a; size =      1529; name = DISK2\DOOR.WA_
+    file[]: crc = 32de6f21; size =      5086; name = DISK2\EXPLOSON.WA_
+    file[]: crc = c6703d52; size =      1206; name = DISK2\GAP.WA_
+    file[]: crc = 36ef785f; size =     14451; name = DISK2\GAUGE.VB_
+    file[]: crc = be35afaf; size =     28580; name = DISK2\GOFIGURE.EX_
+    file[]: crc = 58345012; size =     15631; name = DISK2\GOFIGURE.HL_
+    file[]: crc = f60c8d5d; size =      4372; name = DISK2\HIT3.WA_
+    file[]: crc = e9b76212; size =     21872; name = DISK2\JEZZBALL.EX_
+    file[]: crc = 9cf68433; size =      8738; name = DISK2\JEZZBALL.HL_
+    file[]: crc = 4e38f5ed; size =      4231; name = DISK2\JEZZDEAD.WA_
+    file[]: crc = f8091fc6; size =      2475; name = DISK2\LOSEGAME.WA_
+    file[]: crc = b2a7cf22; size =     30571; name = DISK2\MAXWELL.EX_
+    file[]: crc = f6ee7885; size =      9892; name = DISK2\MAXWELL.HL_
+    file[]: crc = e1681c31; size =      6670; name = DISK2\NEWBALL.WA_
+    file[]: crc = b89155e0; size =      1360; name = DISK2\OOF3.WA_
+    file[]: crc = 9cc8b48b; size =     39058; name = DISK2\OPENING.BK_
+    file[]: crc = 6578164a; size =      2216; name = DISK2\OPENING.TX_
+    file[]: crc = 0b1d1f9c; size =       532; name = DISK2\POP2.WA_
+    file[]: crc = 47c4caf0; size =      2499; name = DISK2\STRIKE.WA_
+    file[]: crc = 8712a69c; size =      5983; name = DISK2\TELEPORT.WA_
+    file[]: crc = 359699b5; size =     24401; name = DISK2\THREED.VB_
+    file[]: crc = 823e30de; size =     49804; name = DISK2\TICTACDP.EX_
+    file[]: crc = da9df2e5; size =      8405; name = DISK2\TICTACDP.HL_
+    file[]: crc = 00b7f311; size =      5121; name = DISK2\WATER2.WA_
+    file[]: crc = 1f611b83; size =      9196; name = DISK2\WEP4UTIL.DL_
+    file[]: crc = 8f5cf48b; size =      4851; name = DISK2\WINLEVEL.WA_
+    file[]: crc = a3888ab3; size =      1247; name = DISK2\WIPE.WA_
 
 
 
