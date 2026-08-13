@@ -5,7 +5,7 @@ This pack allows installing Windows Entertainment Packs in DREAMM. The installer
 
 |Game|Pack|Status|
 | --- | --- | --- |
-|Chess|4|Does not work (crashes DREAMM on launch)|
+|Chess|4|Works as of 4.0x47|
 |Chip's Challenge|4*|Works|
 |Cruel|1|Works|
 |Dr. Black Jack|4*|Works as of 4.0x40|
