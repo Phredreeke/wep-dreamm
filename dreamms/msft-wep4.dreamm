@@ -114,7 +114,7 @@ game[pc-en-gofigure]:
     file[]: crc = d0bbd3f0; size =     70663; name = GOFIGURE.EXE
     file[]: crc = 95320230; size =     29182; name = GOFIGURE.HLP
     file[]: crc = 0edc1a41; size =     55248; name = THREED.VBX
-    file[]: crc = bfb34857; size =    271264; name = VBRUN100.DLL
+    file[]: crc = aa0b3c65; size =    271264; name = VBRUN100.DLL
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
 
 
@@ -162,7 +162,7 @@ game[pc-en-maxwell]:
     file[]: crc = 49b3904a; size =     72704; name = MAXWELL.EXE
     file[]: crc = 6869e2f4; size =     20429; name = MAXWELL.HLP
     file[]: crc = 39446213; size =      9168; name = NEWBALL.WAV
-    file[]: name = PUTDOWN.WAV // referenced in EXE but not found in WEP4 installation
+    file[]: name = PUTDOWN.WAV; optional = true // referenced in EXE but not found in WEP4 installation
     file[]: name = TADA.WAV; optional = true // Windows built in sound
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
     file[]: crc = e0e5c939; size =      5232; name = WINLEVEL.WAV
@@ -186,7 +186,7 @@ game[pc-en-tictacdrop]:
     file[]: crc = 0edc1a41; size =     55248; name = THREED.VBX
     file[]: crc = 31ed0ccc; size =    120864; name = TICTACDP.EXE
     file[]: crc = 34706421; size =     17679; name = TICTACDP.HLP
-    file[]: crc = bfb34857; size =    271264; name = VBRUN100.DLL
+    file[]: crc = aa0b3c65; size =    271264; name = VBRUN100.DLL
     file[]: crc = 64d438c8; size =     19408; name = WEP4UTIL.DLL
     file[]: crc = e0e5c939; size =      5232; name = WINLEVEL.WAV; optional = true
 
