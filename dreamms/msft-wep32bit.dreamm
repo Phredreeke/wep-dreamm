@@ -1,0 +1,172 @@
+desc[msft-wep32bit]:
+
+name = Windows Entertainment Pack 32-bit prototypes
+icon = msft-wep32bit.png
+machine = pc
+rootpath = C:\WEP
+osenv= windows 98
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+
+//
+// Windows setting
+//
+config[winsetting]:
+    title = Video Configuration
+    option[crop]:   wincrop = true; name = Crop window
+    option[full]: name = Full desktop; priority = 1
+end
+
+
+//
+//  Cruel
+//
+game[pc-en-cruel]:
+    name = Cruel
+    anchorfile = cruel.exe
+    launch = "$(rootpath)\cruel.exe
+    winres = 640x480x8
+    file[]: crc = a2dbe378; size =    157456; name = cards.dll
+    file[]: crc = 9c3ca596; size =     27920; name = cruel.exe
+
+
+end
+
+//
+//  Freecell
+//
+game[pc-en-freecell]:
+    name = Freecell
+    anchorfile = freecell.exe
+    launch = "$(rootpath)\freecell.exe"
+    winres = 640x480x8
+    file[]: crc = a2dbe378; size =    157456; name = cards.dll
+    file[]: crc = 716ca2d3; size =     45328; name = freecell.exe
+
+
+end
+
+//
+//  Golf
+//
+game[pc-en-golf]:
+    name = Golf
+    anchorfile = golf.exe
+    launch = "$(rootpath)\golf.exe"
+    winres = 640x480x8
+    file[]: crc = a2dbe378; size =    157456; name = cards.dll
+    file[]: crc = f8982c36; size =     23824; name = golf.exe
+
+
+
+end
+
+
+
+
+//
+//  Pegged
+//
+game[pc-en-pegged]:
+    name = Pegged
+    anchorfile = pegged.exe	
+    launch = "$(rootpath)\pegged.exe"
+    winres = 640x480x8
+    file[]: crc = d2034dda; size =     20240; name = aboutwep.dll
+    file[]: crc = a48073bb; size =     43792; name = pegged.exe	
+
+
+end
+
+
+//
+//  Reversi
+//
+game[pc-en-reversi]:
+    name = Reversi
+    anchorfile = reversi.exe
+    launch = "$(rootpath)\reversi.exe"
+    winres = 640x480x8
+    file[]: crc = 2514ffda; size =     28944; name = reversi.exe
+
+
+end
+
+
+//
+//  Snake
+//
+game[pc-en-snake]:
+    name = Snake
+    anchorfile = snake.exe
+    launch = "$(rootpath)\snake.exe"
+    winres = 640x480x8
+    file[]: crc = d2034dda; size =     20240; name = aboutwep.dll
+    file[]: crc = f7be8cc7; size =     34064; name = snake.exe
+
+
+end
+
+
+//
+//  Solitaire
+//
+game[pc-en-solitaire]:
+    name = Solitaire
+    anchorfile = sol.exe
+    launch = "$(rootpath)\sol.exe"
+    winres = 640x480x8
+    file[]: crc = a2dbe378; size =    157456; name = cards.dll
+    file[]: crc = a423d1bc; size =     61200; name = sol.exe
+
+
+end
+
+//
+//  Taipei
+//
+game[pc-en-taipei]:
+    name = Taipei
+    anchorfile = taipei.exe
+    launch = "$(rootpath)\taipei.exe"
+    winres = 640x480x8
+    file[]: crc = 2e0c4bf9; size =     89360; name = taipei.exe
+
+
+end
+
+
+//
+//  Tic Tactics
+//
+game[pc-en-tictactics]:
+    name = Tic Tactics
+    anchorfile = tictac.exe
+    launch = "$(rootpath)\tictac.exe"
+    winres = 640x480x8
+    file[]: crc = d2034dda; size =     20240; name = aboutwep.dll
+    file[]: crc = 5bff99e5; size =     28432; name = tictac.exe
+
+
+end
+
+
+//
+//  Minesweeper
+//
+game[pc-en-winmine]:
+    name = Minesweeper
+    anchorfile = winmine.exe
+    launch = "$(rootpath)\winmine.exe"
+    winres = 640x480x8
+    file[]: crc = ffb9999f; size =     40720; name = winmine.exe
+
+
+end
+
+end
