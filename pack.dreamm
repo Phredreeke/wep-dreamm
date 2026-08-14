@@ -1,7 +1,8 @@
-pack[]:
+pack[wep]:
     name = Windows Entertainment Pack
     author = Phredreeke
     link = https://github.com/Phredreeke/wep-dreamm
+    minversion = 4.0x47
 
 end
 
