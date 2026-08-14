@@ -19,18 +19,9 @@ mount[]: vpath = C:\WINDOWS; srcpath = $(ifsinstallpath)\WINDOWS; condition = $(
 // Windows setting
 //
 config[winsetting]:
-    title = Windows version
+    title = Video Configuration
     option[crop]:   wincrop = true; name = Crop window
     option[full]: name = Full desktop; priority = 1
-end
-
-//
-// warnings
-//
-INCOMPATIBLE = false
-warning[incompatible]:
-    condition = $(INCOMPATIBLE)
-    text = This game will crash DREAMM in tested version (4.0x34)
 end
 
 

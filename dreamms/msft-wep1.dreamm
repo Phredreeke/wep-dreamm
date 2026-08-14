@@ -17,7 +17,7 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 // Windows setting
 //
 config[winsetting]:
-    title = Windows version
+    title = Video Configuration
     option[crop]:   wincrop = true; name = Crop window
     option[full]: name = Full desktop; priority = 1
 end
