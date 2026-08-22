@@ -31,8 +31,8 @@ game[pc-en-cruel]:
     anchorfile = cruel.exe
     launch = "$(rootpath)\cruel.exe
     winres = 640x480x8
-    file[]: crc = a2dbe378; size =    157456; name = cards.dll
-    file[]: crc = 9c3ca596; size =     27920; name = cruel.exe
+    file[]: crc = a2dbe378; size =    157456; name = cards.dll; exactonly = true
+    file[]: crc = 9c3ca596; size =     27920; name = cruel.exe; exactonly = true
 
 
 end
@@ -45,8 +45,8 @@ game[pc-en-freecell]:
     anchorfile = freecell.exe
     launch = "$(rootpath)\freecell.exe"
     winres = 640x480x8
-    file[]: crc = a2dbe378; size =    157456; name = cards.dll
-    file[]: crc = 716ca2d3; size =     45328; name = freecell.exe
+    file[]: crc = a2dbe378; size =    157456; name = cards.dll; exactonly = true
+    file[]: crc = 716ca2d3; size =     45328; name = freecell.exe; exactonly = true
 
 
 end
@@ -59,8 +59,8 @@ game[pc-en-golf]:
     anchorfile = golf.exe
     launch = "$(rootpath)\golf.exe"
     winres = 640x480x8
-    file[]: crc = a2dbe378; size =    157456; name = cards.dll
-    file[]: crc = f8982c36; size =     23824; name = golf.exe
+    file[]: crc = a2dbe378; size =    157456; name = cards.dll; exactonly = true
+    file[]: crc = f8982c36; size =     23824; name = golf.exe; exactonly = true
 
 
 
@@ -77,8 +77,8 @@ game[pc-en-pegged]:
     anchorfile = pegged.exe	
     launch = "$(rootpath)\pegged.exe"
     winres = 640x480x8
-    file[]: crc = d2034dda; size =     20240; name = aboutwep.dll
-    file[]: crc = a48073bb; size =     43792; name = pegged.exe	
+    file[]: crc = d2034dda; size =     20240; name = aboutwep.dll; exactonly = true
+    file[]: crc = a48073bb; size =     43792; name = pegged.exe; exactonly = true	
 
 
 end
@@ -92,7 +92,7 @@ game[pc-en-reversi]:
     anchorfile = reversi.exe
     launch = "$(rootpath)\reversi.exe"
     winres = 640x480x8
-    file[]: crc = 2514ffda; size =     28944; name = reversi.exe
+    file[]: crc = 2514ffda; size =     28944; name = reversi.exe; exactonly = true
 
 
 end
@@ -106,8 +106,8 @@ game[pc-en-snake]:
     anchorfile = snake.exe
     launch = "$(rootpath)\snake.exe"
     winres = 640x480x8
-    file[]: crc = d2034dda; size =     20240; name = aboutwep.dll
-    file[]: crc = f7be8cc7; size =     34064; name = snake.exe
+    file[]: crc = d2034dda; size =     20240; name = aboutwep.dll; exactonly = true
+    file[]: crc = f7be8cc7; size =     34064; name = snake.exe; exactonly = true
 
 
 end
@@ -121,8 +121,8 @@ game[pc-en-solitaire]:
     anchorfile = sol.exe
     launch = "$(rootpath)\sol.exe"
     winres = 640x480x8
-    file[]: crc = a2dbe378; size =    157456; name = cards.dll
-    file[]: crc = a423d1bc; size =     61200; name = sol.exe
+    file[]: crc = a2dbe378; size =    157456; name = cards.dll; exactonly = true
+    file[]: crc = a423d1bc; size =     61200; name = sol.exe; exactonly = true
 
 
 end
@@ -135,7 +135,7 @@ game[pc-en-taipei]:
     anchorfile = taipei.exe
     launch = "$(rootpath)\taipei.exe"
     winres = 640x480x8
-    file[]: crc = 2e0c4bf9; size =     89360; name = taipei.exe
+    file[]: crc = 2e0c4bf9; size =     89360; name = taipei.exe; exactonly = true
 
 
 end
@@ -149,8 +149,8 @@ game[pc-en-tictactics]:
     anchorfile = tictac.exe
     launch = "$(rootpath)\tictac.exe"
     winres = 640x480x8
-    file[]: crc = d2034dda; size =     20240; name = aboutwep.dll
-    file[]: crc = 5bff99e5; size =     28432; name = tictac.exe
+    file[]: crc = d2034dda; size =     20240; name = aboutwep.dll; exactonly = true
+    file[]: crc = 5bff99e5; size =     28432; name = tictac.exe; exactonly = true
 
 
 end
@@ -164,7 +164,7 @@ game[pc-en-winmine]:
     anchorfile = winmine.exe
     launch = "$(rootpath)\winmine.exe"
     winres = 640x480x8
-    file[]: crc = ffb9999f; size =     40720; name = winmine.exe
+    file[]: crc = ffb9999f; size =     40720; name = winmine.exe; exactonly = true
 
 
 end
