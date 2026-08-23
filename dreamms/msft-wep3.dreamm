@@ -54,6 +54,7 @@ game[pc-en-klotski]:
     winres = 640x480x8
     file[]: crc = 7a098cf1; size =    147584; name = KLOTSKI.EXE
     file[]: crc = d3c89284; size =     14074; name = KLOTSKI.HLP
+    file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
 
 
 
