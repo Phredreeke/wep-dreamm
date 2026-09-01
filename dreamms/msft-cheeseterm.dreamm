@@ -1,0 +1,42 @@
+//
+// Cheese Terminator (Microsoft, 1992)
+// DREAMM file provided by exmensa
+//
+desc[msft-cheeseterm]:
+
+name = Cheese Terminator
+icon = msft-cheeseterm.png
+machine = pc
+osenv = windows 3.11.002
+winres = 640x480x8
+rootpath = C:\MCT
+launch = $(rootpath)\MCT.EXE
+
+//
+// filesystem
+//
+mount[]: vpath = C:\;			srcpath = $(ifsdeltapath);		writable = true
+mount[]: vpath = $(rootpath);	srcpath = $(ifsinstallpath)
+
+
+//
+// Windows setting
+//
+config[winsetting]:
+    title = Video Configuration
+    option[crop]:	name = Crop window;		wincrop = true
+    option[full]:	name = Full desktop;	priority = 1
+end
+
+
+//
+// v1.0 1992
+//
+game[pc-en]:
+    name = v1.0
+    anchorfile = mct.exe
+	file[]: crc = 5f7354d9; size =    176128; name = MCT.EXE
+    file[]: crc = 8e3332d4; size =      9445; name = MCTHELP.HLP
+end
+
+end
