@@ -14,16 +14,6 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
 
 //
-// Windows setting
-//
-config[winsetting]:
-    title = Video Configuration
-    option[crop]:   wincrop = true; name = Crop window
-    option[full]: name = Full desktop; priority = 1
-end
-
-
-//
 //  Cruel
 //
 game[pc-en-cruel]:
@@ -31,6 +21,7 @@ game[pc-en-cruel]:
     anchorfile = cruel.exe
     launch = "$(rootpath)\cruel.exe
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = a2dbe378; size =    157456; name = cards.dll; exactonly = true
     file[]: crc = 9c3ca596; size =     27920; name = cruel.exe; exactonly = true
 
@@ -45,6 +36,7 @@ game[pc-en-freecell]:
     anchorfile = freecell.exe
     launch = "$(rootpath)\freecell.exe"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = a2dbe378; size =    157456; name = cards.dll; exactonly = true
     file[]: crc = 716ca2d3; size =     45328; name = freecell.exe; exactonly = true
 
@@ -59,6 +51,7 @@ game[pc-en-golf]:
     anchorfile = golf.exe
     launch = "$(rootpath)\golf.exe"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = a2dbe378; size =    157456; name = cards.dll; exactonly = true
     file[]: crc = f8982c36; size =     23824; name = golf.exe; exactonly = true
 
@@ -121,6 +114,8 @@ game[pc-en-solitaire]:
     anchorfile = sol.exe
     launch = "$(rootpath)\sol.exe"
     winres = 640x480x8
+    mips = $(MIPS_386SX_20)
+    wincrop = true;
     file[]: crc = a2dbe378; size =    157456; name = cards.dll; exactonly = true
     file[]: crc = a423d1bc; size =     61200; name = sol.exe; exactonly = true
 
@@ -135,6 +130,7 @@ game[pc-en-taipei]:
     anchorfile = taipei.exe
     launch = "$(rootpath)\taipei.exe"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 2e0c4bf9; size =     89360; name = taipei.exe; exactonly = true
 
 

@@ -12,16 +12,6 @@ osenv= windows 3.11.002
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-
-//
-// Windows setting
-//
-config[winsetting]:
-    title = Video Configuration
-    option[crop]:   wincrop = true; name = Crop window
-    option[full]: name = Full desktop; priority = 1
-end
-
 //
 //  Cruel
 //
@@ -30,6 +20,7 @@ game[pc-en-cruel]:
     anchorfile = CRUEL.EXE
     launch = "$(rootpath)\CRUEL.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = d2ac7572; size =      9232; name = ABOUTWEP.DLL
     file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
     file[]: crc = 60ae2d0e; size =     17120; name = CRUEL.EXE
@@ -46,6 +37,7 @@ game[pc-en-golf]:
     anchorfile = GOLF.EXE
     launch = "$(rootpath)\GOLF.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = d2ac7572; size =      9232; name = ABOUTWEP.DLL
     file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
     file[]: crc = d68b7d91; size =     14256; name = GOLF.EXE
@@ -96,6 +88,7 @@ game[pc-en-taipei]:
     anchorfile = TP.EXE
     launch = "$(rootpath)\TP.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = d2ac7572; size =      9232; name = ABOUTWEP.DLL
     file[]: crc = 645c9b86; size =    127147; name = TP.EXE
     file[]: crc = f986b86e; size =     28375; name = TP.HLP
@@ -111,6 +104,7 @@ game[pc-en-tetris]:
     anchorfile = TETRIS.EXE
     launch = "$(rootpath)\TETRIS.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = dc2fd1f3; size =     10224; name = ABOUTTET.DLL
     file[]: crc = 2fff577e; size =     64784; name = TETRIS.EXE
     file[]: crc = 186b9e11; size =     25416; name = TETRIS.HLP

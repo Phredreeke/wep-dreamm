@@ -31,6 +31,7 @@ game[pc-en-blackjack]:
     anchorfile = BLAKJAK.EXE
     launch = "$(rootpath)\BLAKJAK.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 7e657b32; size =    136768; name = BLAKJAK.EXE
     file[]: crc = efef6a3b; size =     28272; name = BLAKJAK.HLP
     file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
@@ -47,7 +48,7 @@ game[pc-en-chess]:
     anchorfile = CHESS.EXE
     launch = "$(rootpath)\CHESS.EXE"
     winres = 640x480x8
-    INCOMPATIBLE = true
+    wincrop = true
     file[]: crc = 0aad4d7f; size =    232656; name = CHESS.EXE
     file[]: crc = f2eb4c55; size =     37133; name = CHESS.HLP
     file[]: crc = b57fbf16; size =     75744; name = OPENING.BK
@@ -66,6 +67,7 @@ game[pc-en-chips]:
     launch = "$(rootpath)\CHIPS.EXE"
     audiohw = gmidi
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 5a02ba9c; size =     10400; name = BELL.WAV
     file[]: crc = 2a5a861f; size =      1334; name = BLIP2.WAV
     file[]: crc = 5c525675; size =      2758; name = BUMMER.WAV
@@ -102,6 +104,7 @@ game[pc-en-gofigure]:
     anchorfile = GOFIGURE.EXE
     launch = "$(rootpath)\GOFIGURE.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 8805a6ec; size =     29472; name = GAUGE.VBX
     file[]: crc = d0bbd3f0; size =     70663; name = GOFIGURE.EXE
     file[]: crc = 95320230; size =     29182; name = GOFIGURE.HLP
@@ -121,6 +124,7 @@ game[pc-en-jezzball]:
     anchorfile = JEZZBALL.EXE
     launch = "$(rootpath)\JEZZBALL.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 5a02ba9c; size =     10400; name = ALERT.WAV; optional = true // sound is omitted from best of WEP
     file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV
     file[]: name = GAMELOST.WAV; optional = true // referenced in EXE but not found in WEP4 installation
@@ -146,6 +150,7 @@ game[pc-en-maxwell]:
     anchorfile = MAXWELL.EXE
     launch = "$(rootpath)\MAXWELL.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 5a02ba9c; size =     10400; name = BELL.WAV
     file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV
     file[]: crc = 83c1c996; size =      7842; name = EXPLOSON.WAV
@@ -171,6 +176,7 @@ game[pc-en-tictacdrop]:
     anchorfile = TICTACDP.EXE
     launch = "$(rootpath)\TICTACDP.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = af2c25d5; size =      1264; name = BOUNCE.WAV; optional = true
     file[]: name = CHIMES.WAV; optional = true // Windows built in sound
     file[]: crc = 24693214; size =     16000; name = CMDIALOG.VBX

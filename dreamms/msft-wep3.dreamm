@@ -15,15 +15,6 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 mount[]: vpath = C:\WINDOWS; srcpath = $(ifsinstallpath)\WINDOWS; condition = $(FUJIGOLF)
 
 
-//
-// Windows setting
-//
-config[winsetting]:
-    title = Video Configuration
-    option[crop]:   wincrop = true; name = Crop window
-    option[full]: name = Full desktop; priority = 1
-end
-
 
 //
 //  Fuji Golf
@@ -34,7 +25,7 @@ game[pc-en-fujigolf]:
     launch = "$(rootpath)\FUJIGOLF.EXE"
     winres = 640x480x8
     FUJIGOLF = true
-    INCOMPATIBLE = true
+    wincrop = true;
     file[]: crc = 8903c2db; size =     24624; name = WINDOWS\FUJIGOLF.DAT
     file[]: crc = 9d44cb65; size =    253952; name = FUJIGOLF.EXE
     file[]: crc = 10350dcd; size =     17221; name = FUJIGOLF.HLP
@@ -52,10 +43,10 @@ game[pc-en-klotski]:
     anchorfile = KLOTSKI.EXE
     launch = "$(rootpath)\KLOTSKI.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 7a098cf1; size =    147584; name = KLOTSKI.EXE
     file[]: crc = d3c89284; size =     14074; name = KLOTSKI.HLP
     file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
-
 
 
 end
@@ -68,6 +59,7 @@ game[pc-en-lifegen]:
     anchorfile = LIFEGEN.EXE
     launch = "$(rootpath)\LIFEGEN.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = a04f27eb; size =     60752; name = LIFEGEN.EXE
     file[]: crc = 8b301c92; size =     22978; name = LIFEGEN.HLP
     file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
@@ -88,6 +80,7 @@ game[pc-en-skifree]:
     anchorfile = SKI.EXE
     launch = "$(rootpath)\SKI.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 708512f3; size =     88848; name = SKI.EXE
 
 
@@ -119,6 +112,7 @@ game[pc-en-tripeaks]:
     anchorfile = TRIPEAKS.EXE
     launch = "$(rootpath)\TRIPEAKS.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 5abc5b14; size =    115056; name = TRIPEAKS.EXE
     file[]: crc = 52ed0cbf; size =     16258; name = TRIPEAKS.HLP
     file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
@@ -136,6 +130,7 @@ game[pc-en-wordzap]:
     anchorfile = WORDZAP.EXE
     launch = "$(rootpath)\WORDZAP.EXE"
     winres = 640x480x8
+    wincrop = true;
     file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
     file[]: crc = 962552b7; size =     90112; name = WORDZAP.EXE
     file[]: crc = 155419c5; size =     22705; name = WORDZAP.HLP

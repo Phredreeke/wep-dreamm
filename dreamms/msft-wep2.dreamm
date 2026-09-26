@@ -12,14 +12,13 @@ osenv= windows 3.11.002
 mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
 mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 
-
 //
-// Windows setting
+// warnings
 //
-config[winsetting]:
-    title = Video Configuration
-    option[crop]:   wincrop = true; name = Crop window
-    option[full]: name = Full desktop; priority = 1
+INCOMPATIBLE = false
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = The game isn't displayed correctly in tested DREAMM version (4.0x67)
 end
 
 //
@@ -30,6 +29,7 @@ game[pc-en-freecell]:
     anchorfile = FREECELL.EXE
     winres = 640x480x8
     launch = "$(rootpath)\FREECELL.EXE"
+    wincrop = true;
     file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
     file[]: crc = f94bbb45; size =     28672; name = FREECELL.EXE
     file[]: crc = 7159768b; size =     17480; name = FREECELL.HLP
@@ -45,6 +45,7 @@ game[pc-en-jigsawed]:
     anchorfile = JIGSAWED.EXE
     winres = 640x480x8
     launch = "$(rootpath)\JIGSAWED.EXE"
+    INCOMPATIBLE = true
     file[]: crc = c5e22a95; size =     80358; name = BRICKS.BMP
     file[]: crc = 3c2c6557; size =     80358; name = FISH.BMP
     file[]: crc = ead5faa4; size =     66904; name = JIGSAWED.EXE
@@ -120,6 +121,7 @@ game[pc-en-tutstomb]:
     anchorfile = TUTSTOMB.EXE
     winres = 640x480x8
     launch = "$(rootpath)\TUTSTOMB.EXE"
+    wincrop = true;
     file[]: crc = 21e7a11c; size =    148528; name = CARDS.DLL
     file[]: crc = cfd66433; size =    101472; name = TUTSTOMB.EXE
     file[]: crc = 2edb931a; size =     15527; name = TUTSTOMB.HLP

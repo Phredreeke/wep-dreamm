@@ -1,0 +1,122 @@
+desc[msft-arcade]:
+
+name = Microsoft Arcade
+icon = msft-arcade.png
+machine = pc
+rootpath = C:\ARCADE
+osenv= windows 3.11.002
+
+//
+// filesystem
+//
+mount[]: vpath = C:\; srcpath = $(ifsdeltapath); writable = true
+mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
+
+//
+// warnings
+//
+INCOMPATIBLE = true
+warning[incompatible]:
+    condition = $(INCOMPATIBLE)
+    text = The games in this pack have issues in tested DREAMM version (4.0x67)
+end
+
+//
+//  Asteroids
+//
+game[pc-en-asteroids]:
+    name = Asteroids
+    anchorfile = ASTEROID.EXE
+    launch = "$(rootpath)\ASTEROID.EXE"
+    winres = 640x480x8
+    file[]: crc = 9eb10d84; size =      6512; name = AMDSPIN.DLL
+    file[]: crc = 67fad4ac; size =      5632; name = ARCADEVF.DLL
+    file[]: crc = 88c87cda; size =     19712; name = ARCCTL.DLL
+    file[]: crc = c22e8c3c; size =     10240; name = ARCFONTS.FON
+    file[]: crc = 61de4f3b; size =    165120; name = ASTEROID.EXE
+    file[]: crc = ebd12fe8; size =     78853; name = ASTEROID.HLP
+    file[]: crc = dc5c782e; size =     24576; name = WAVEMIX.DLL
+
+
+end
+
+
+//
+//  Battlezone
+//
+game[pc-en-battlezone]:
+    name = Battlezone
+    anchorfile = BZ.EXE
+    launch = "$(rootpath)\BZ.EXE"
+    winres = 640x480x8
+    file[]: crc = 9eb10d84; size =      6512; name = AMDSPIN.DLL
+    file[]: crc = 67fad4ac; size =      5632; name = ARCADEVF.DLL
+    file[]: crc = 88c87cda; size =     19712; name = ARCCTL.DLL
+    file[]: crc = 261c1f64; size =    408320; name = BZ.EXE
+    file[]: crc = d5b0ce3a; size =     89969; name = BZ.HLP
+    file[]: crc = 598be271; size =     27514; name = BZ10.WAV
+    file[]: crc = dc5c782e; size =     24576; name = WAVEMIX.DLL
+
+
+end
+
+//
+//  Centipede
+//
+game[pc-en-centipede]:
+    name = Centipede
+    anchorfile = CP.EXE
+    launch = "$(rootpath)\CP.EXE"
+    winres = 640x480x8
+    file[]: crc = 9eb10d84; size =      6512; name = AMDSPIN.DLL
+    file[]: crc = 67fad4ac; size =      5632; name = ARCADEVF.DLL
+    file[]: crc = 88c87cda; size =     19712; name = ARCCTL.DLL
+    file[]: crc = 25d2e971; size =     82647; name = CENTIPED.HLP
+    file[]: crc = 4f000a47; size =     22624; name = CENTLIFE.WAV
+    file[]: crc = 4c178ad4; size =    232192; name = CP.EXE
+    file[]: crc = 9f8a78c5; size =     23808; name = CPFONTS.FON
+    file[]: crc = dc5c782e; size =     24576; name = WAVEMIX.DLL
+
+
+end
+
+//
+//  Missile Command
+//
+game[pc-en-missilecommand]:
+    name = Missile Command
+    anchorfile = MC.EXE
+    launch = "$(rootpath)\MC.EXE"
+    winres = 640x480x8
+    file[]: crc = 9eb10d84; size =      6512; name = AMDSPIN.DLL
+    file[]: crc = 67fad4ac; size =      5632; name = ARCADEVF.DLL
+    file[]: crc = 88c87cda; size =     19712; name = ARCCTL.DLL
+    file[]: crc = 1ac3d398; size =    366336; name = MC.EXE
+    file[]: crc = ee385c7c; size =     90521; name = MC.HLP
+    file[]: crc = 5375435b; size =     28398; name = MC8.WAV
+    file[]: crc = cc7455e8; size =     28416; name = MCFONTS.FON
+    file[]: crc = dc5c782e; size =     24576; name = WAVEMIX.DLL
+
+
+end
+
+//
+//  Tempest
+//
+game[pc-en-tempest]:
+    name = Tempest
+    anchorfile = TEMPEST.EXE
+    launch = "$(rootpath)\TEMPEST.EXE"
+    winres = 640x480x8
+    file[]: crc = 9eb10d84; size =      6512; name = AMDSPIN.DLL
+    file[]: crc = 67fad4ac; size =      5632; name = ARCADEVF.DLL
+    file[]: crc = 88c87cda; size =     19712; name = ARCCTL.DLL
+    file[]: crc = ff4d885d; size =    289536; name = TEMPEST.EXE
+    file[]: crc = 3d043dbe; size =     99109; name = TEMPEST.HLP
+    file[]: crc = d077cc16; size =     48508; name = TM7.WAV
+    file[]: crc = dc5c782e; size =     24576; name = WAVEMIX.DLL
+
+
+end
+
+end
