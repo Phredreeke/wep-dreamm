@@ -49,6 +49,8 @@ Games with an asterisk are also in Best of Entertainment Pack
 
 # Other .dreammpacks
 - Humongous Entertainment: https://github.com/Phredreeke/humongous-dreamm
+- Compedia: https://github.com/Phredreeke/compedia-dreamm
+- Hugo: https://github.com/Phredreeke/hugotroll-dreamm
 - Sierra: https://github.com/M-A-Boucher/sierra-dreamm
 - 3DRealms/Apogee: https://github.com/M-A-Boucher/3drealms-dreamm
 - id Software: https://github.com/M-A-Boucher/idsoftware-dreamm
