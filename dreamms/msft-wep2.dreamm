@@ -18,7 +18,7 @@ mount[]: vpath = $(rootpath); srcpath = $(ifsinstallpath)
 INCOMPATIBLE = false
 warning[incompatible]:
     condition = $(INCOMPATIBLE)
-    text = The game isn't displayed correctly in tested DREAMM version (4.0x67)
+    text = The game isn't displayed correctly in tested DREAMM version (4.0x82)
 end
 
 //
@@ -53,7 +53,7 @@ game[pc-en-jigsawed]:
     file[]: crc = a3870b53; size =     80358; name = RUG.BMP
     file[]: crc = e445126a; size =     80358; name = TANKER.BMP
     file[]: crc = 0395748d; size =     80358; name = TREES.BMP
-    file[]: crc = bfb34857; size =    271264; name = VBRUN100.DLL
+    file[]: name = VBRUN100.DLL
     file[]: crc = 96240342; size =     19200; name = WEPUTIL.DLL
 
 end
@@ -141,7 +141,7 @@ installer[pc-en-wep2-install]:
     file[]: crc = 889ef0c5; size =     34288; name = BINXZ.EXE
     file[]: crc = cbbc5f8a; size =      2871; name = README.TXT
     file[]: crc = 94e0dc4d; size =      5280; name = SETUP.EXE
-    file[]: crc = 98b11017; size =      3257; name = SETUP.INF
+    file[]: name = SETUP.INF
     file[]: crc = 009e32b5; size =     46946; name = BIN\BRICKS.BM$
     file[]: crc = a98f590a; size =      1452; name = BIN\BRICKS.I$
     file[]: crc = 429311cd; size =     48424; name = BIN\CARDS.DL$
