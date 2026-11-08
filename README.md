@@ -35,6 +35,18 @@ This pack allows installing Windows Entertainment Packs in DREAMM.
 
 Games with an asterisk are also in Best of Entertainment Pack
 
+# Other games
+
+|Game|Pack|Status|
+| --- | --- | --- |
+|Asteroids|Arcade|Visual errors in full screen mode|
+|Battlezone|Arcade|Visual errors in full screen mode|
+|Centipede|Arcade|Controller issues, visual errors in full screen mode|
+|Cheese Terminator| |Works|
+|Missile Command|Arcade|Visual errors in full screen mode|
+|Tempest|Arcade|Visual errors in full screen mode|
+
+
 # Other .dreammpacks
 - Humongous Entertainment: https://github.com/Phredreeke/humongous-dreamm
 - Sierra: https://github.com/M-A-Boucher/sierra-dreamm
